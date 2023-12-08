@@ -4,4 +4,4 @@ This project aims to test the ability and correctness of compiler control flow v
 ## Usage
 ./run.sh
 ## Note
-The default data type is int. If you want to change the test type, simply modify the mytype in commen.h.
+The default data type is int. If you want to change the test type, simply modify the mytype in common.h.
