@@ -1,25 +1,27 @@
 CC=/home/wz/gcc10.3.0/gcc10.3.0-bin/bin/gcc
-target=tsvc
-DIR=bin
+
 vec-flag=-O3 -mavx2 #-ffast-math
 novec-flag=-O3 -fno-tree-vectorize
+
 dump-flag=-fopt-info-vec -fdump-tree-vect-details -fdump-tree-ifcvt-details
-all:$(DIR)/$(target)-novec $(DIR)/$(target)-vec
+all:bin/tsvc-novec bin/tsvc-vec
 #bin
-$(DIR)/$(target)-novec:main.o $(target)-novec.o
-	$(CC) main.o $(target)-novec.o -o $(DIR)/$(target)-novec
-$(DIR)/$(target)-vec:main.o $(target)-vec.o
-	$(CC) main.o $(target)-vec.o -o $(DIR)/$(target)-vec
+bin/tsvc-novec:main.o tsvc-novec.o tsvc-verify.o
+	$(CC) main.o tsvc-novec.o tsvc-verify.o -o bin/tsvc-novec
+bin/tsvc-vec:main.o tsvc-vec.o tsvc-verify.o
+	$(CC) main.o tsvc-vec.o tsvc-verify.o -o bin/tsvc-vec
 
 #obj
 main.o:main.c
-	$(CC) -c main.c -o main.o
+	$(CC) -c $(novec-flag) main.c -o main.o
+tsvc-verify.o:tsvc-verify.c
+	$(CC) -c $(novec-flag) tsvc-verify.c -o tsvc-verify.o
 
-$(target)-vec.o:$(target).c
-	$(CC) -c $(vec-flag)  $(target).c -o $(target)-vec.o $(dump-flag)
-$(target)-novec.o:$(target).c
-	$(CC) -c $(novec-flag) $(target).c -o $(target)-novec.o
+tsvc-vec.o:tsvc.c
+	$(CC) -c $(vec-flag)  tsvc.c -o tsvc-vec.o $(dump-flag)
+tsvc-novec.o:tsvc.c
+	$(CC) -c $(novec-flag) tsvc.c -o tsvc-novec.o
 
 #clean
 clean:
-	rm -f *.o $(DIR)/$(target)-* $(target)-* $(target).c.* *.s
+	rm -f *.o bin/tsvc-* tsvc.c.* *.s
