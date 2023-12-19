@@ -517,19 +517,19 @@ tsvc.c:5:5: note:   ==> examining statement: if (ivtmp_51 != 0)
 tsvc.c:5:5: note:   skip.
 tsvc.c:5:5: note:   vectorization factor = 8
 tsvc.c:5:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x4494d10 *_3 1 times scalar_load costs 12 in body
-0x4494d10 *_55 1 times scalar_load costs 12 in body
-0x4494d10 *_57 1 times scalar_load costs 12 in body
-0x4494d10 _15 + pretmp_56 1 times scalar_stmt costs 4 in body
-0x4494d10 _18 + pretmp_56 1 times scalar_stmt costs 4 in body
-0x4494d10 _4 < 0 1 times scalar_stmt costs 4 in body
-0x4494d10 .MASK_STORE (_21, 32B, _63, _22) 1 times scalar_store costs 12 in body
-0x4494d10 _4 >= 0 1 times scalar_stmt costs 4 in body
-0x4494d10 .MASK_LOAD (_5, 32B, _65) 1 times scalar_load costs 12 in body
-0x4494d10 _6 + pretmp_56 1 times scalar_stmt costs 4 in body
-0x4494d10 .MASK_LOAD (_10, 32B, _65) 1 times scalar_load costs 12 in body
-0x4494d10 _9 + _11 1 times scalar_stmt costs 4 in body
-0x4494d10 .MASK_STORE (_57, 32B, _65, _13) 1 times scalar_store costs 12 in body
+0x51c6c60 *_3 1 times scalar_load costs 12 in body
+0x51c6c60 *_55 1 times scalar_load costs 12 in body
+0x51c6c60 *_57 1 times scalar_load costs 12 in body
+0x51c6c60 _15 + pretmp_56 1 times scalar_stmt costs 4 in body
+0x51c6c60 _18 + pretmp_56 1 times scalar_stmt costs 4 in body
+0x51c6c60 _4 < 0 1 times scalar_stmt costs 4 in body
+0x51c6c60 .MASK_STORE (_21, 32B, _63, _22) 1 times scalar_store costs 12 in body
+0x51c6c60 _4 >= 0 1 times scalar_stmt costs 4 in body
+0x51c6c60 .MASK_LOAD (_5, 32B, _65) 1 times scalar_load costs 12 in body
+0x51c6c60 _6 + pretmp_56 1 times scalar_stmt costs 4 in body
+0x51c6c60 .MASK_LOAD (_10, 32B, _65) 1 times scalar_load costs 12 in body
+0x51c6c60 _9 + _11 1 times scalar_stmt costs 4 in body
+0x51c6c60 .MASK_STORE (_57, 32B, _65, _13) 1 times scalar_store costs 12 in body
 tsvc.c:5:5: note:   === vect_analyze_slp ===
 tsvc.c:5:5: note:   === vect_make_slp_decision ===
 tsvc.c:5:5: note:  vectorization_factor = 8, niters = 65535
@@ -794,21 +794,21 @@ tsvc.c:5:5: note:   ==> examining statement: ivtmp_51 = ivtmp_52 - 1;
 tsvc.c:5:5: note:   irrelevant.
 tsvc.c:5:5: note:   ==> examining statement: if (ivtmp_51 != 0)
 tsvc.c:5:5: note:   irrelevant.
-0x44588d0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x44588d0 *_55 1 times unaligned_load (misalign -1) costs 20 in body
-0x44588d0 *_57 1 times unaligned_load (misalign -1) costs 20 in body
-0x44588d0 _15 + pretmp_56 1 times vector_stmt costs 4 in body
-0x44588d0 _18 + pretmp_56 1 times vector_stmt costs 4 in body
-0x44588d0 _4 < 0 1 times scalar_to_vec costs 4 in prologue
-0x44588d0 _4 < 0 1 times vector_stmt costs 4 in body
-0x44588d0 .MASK_STORE (_21, 32B, _63, _22) 1 times unaligned_store (misalign -1) costs 20 in body
-0x44588d0 _4 >= 0 1 times scalar_to_vec costs 4 in prologue
-0x44588d0 _4 >= 0 1 times vector_stmt costs 4 in body
-0x44588d0 .MASK_LOAD (_5, 32B, _65) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44588d0 _6 + pretmp_56 1 times vector_stmt costs 4 in body
-0x44588d0 .MASK_LOAD (_10, 32B, _65) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44588d0 _9 + _11 1 times vector_stmt costs 4 in body
-0x44588d0 .MASK_STORE (_57, 32B, _65, _13) 1 times unaligned_store (misalign -1) costs 20 in body
+0x5088290 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x5088290 *_55 1 times unaligned_load (misalign -1) costs 20 in body
+0x5088290 *_57 1 times unaligned_load (misalign -1) costs 20 in body
+0x5088290 _15 + pretmp_56 1 times vector_stmt costs 4 in body
+0x5088290 _18 + pretmp_56 1 times vector_stmt costs 4 in body
+0x5088290 _4 < 0 1 times scalar_to_vec costs 4 in prologue
+0x5088290 _4 < 0 1 times vector_stmt costs 4 in body
+0x5088290 .MASK_STORE (_21, 32B, _63, _22) 1 times unaligned_store (misalign -1) costs 20 in body
+0x5088290 _4 >= 0 1 times scalar_to_vec costs 4 in prologue
+0x5088290 _4 >= 0 1 times vector_stmt costs 4 in body
+0x5088290 .MASK_LOAD (_5, 32B, _65) 1 times unaligned_load (misalign -1) costs 20 in body
+0x5088290 _6 + pretmp_56 1 times vector_stmt costs 4 in body
+0x5088290 .MASK_LOAD (_10, 32B, _65) 1 times unaligned_load (misalign -1) costs 20 in body
+0x5088290 _9 + _11 1 times vector_stmt costs 4 in body
+0x5088290 .MASK_STORE (_57, 32B, _65, _13) 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65534, + , 4294967295] != 0
   bounds on difference of bases: -65534 ... -65534
@@ -850,22 +850,22 @@ Induction variable (int *) e_30(D) + 4 * iteration does not wrap in statement _1
 Statement _10 = e_30(D) + _2;
  is executed at most 4611686018427387902 (bounded by 4611686018427387902) + 1 times in loop 1.
 tsvc.c:5:5: note:  not using a fully-masked loop.
-0x44588d0 <unknown> 7 times vector_stmt costs 28 in prologue
+0x5088290 <unknown> 7 times vector_stmt costs 28 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x44588d0 <unknown> 1 times cond_branch_taken costs 16 in prologue
-0x44588d0 *_3 7 times scalar_load costs 84 in epilogue
-0x44588d0 *_55 7 times scalar_load costs 84 in epilogue
-0x44588d0 *_57 7 times scalar_load costs 84 in epilogue
-0x44588d0 _15 + pretmp_56 7 times scalar_stmt costs 28 in epilogue
-0x44588d0 _18 + pretmp_56 7 times scalar_stmt costs 28 in epilogue
-0x44588d0 _4 < 0 7 times scalar_stmt costs 28 in epilogue
-0x44588d0 .MASK_STORE (_21, 32B, _63, _22) 7 times scalar_store costs 84 in epilogue
-0x44588d0 _4 >= 0 7 times scalar_stmt costs 28 in epilogue
-0x44588d0 .MASK_LOAD (_5, 32B, _65) 7 times scalar_load costs 84 in epilogue
-0x44588d0 _6 + pretmp_56 7 times scalar_stmt costs 28 in epilogue
-0x44588d0 .MASK_LOAD (_10, 32B, _65) 7 times scalar_load costs 84 in epilogue
-0x44588d0 _9 + _11 7 times scalar_stmt costs 28 in epilogue
-0x44588d0 .MASK_STORE (_57, 32B, _65, _13) 7 times scalar_store costs 84 in epilogue
+0x5088290 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x5088290 *_3 7 times scalar_load costs 84 in epilogue
+0x5088290 *_55 7 times scalar_load costs 84 in epilogue
+0x5088290 *_57 7 times scalar_load costs 84 in epilogue
+0x5088290 _15 + pretmp_56 7 times scalar_stmt costs 28 in epilogue
+0x5088290 _18 + pretmp_56 7 times scalar_stmt costs 28 in epilogue
+0x5088290 _4 < 0 7 times scalar_stmt costs 28 in epilogue
+0x5088290 .MASK_STORE (_21, 32B, _63, _22) 7 times scalar_store costs 84 in epilogue
+0x5088290 _4 >= 0 7 times scalar_stmt costs 28 in epilogue
+0x5088290 .MASK_LOAD (_5, 32B, _65) 7 times scalar_load costs 84 in epilogue
+0x5088290 _6 + pretmp_56 7 times scalar_stmt costs 28 in epilogue
+0x5088290 .MASK_LOAD (_10, 32B, _65) 7 times scalar_load costs 84 in epilogue
+0x5088290 _9 + _11 7 times scalar_stmt costs 28 in epilogue
+0x5088290 .MASK_STORE (_57, 32B, _65, _13) 7 times scalar_store costs 84 in epilogue
 tsvc.c:5:5: note:  Cost model analysis: 
   Vector inside of loop cost: 164
   Vector prologue cost: 52
@@ -1118,19 +1118,19 @@ tsvc.c:5:5: note:   ==> examining statement: if (ivtmp_51 != 0)
 tsvc.c:5:5: note:   skip.
 tsvc.c:5:5: note:   vectorization factor = 4
 tsvc.c:5:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x4494d10 *_3 1 times scalar_load costs 12 in body
-0x4494d10 *_55 1 times scalar_load costs 12 in body
-0x4494d10 *_57 1 times scalar_load costs 12 in body
-0x4494d10 _15 + pretmp_56 1 times scalar_stmt costs 4 in body
-0x4494d10 _18 + pretmp_56 1 times scalar_stmt costs 4 in body
-0x4494d10 _4 < 0 1 times scalar_stmt costs 4 in body
-0x4494d10 .MASK_STORE (_21, 32B, _63, _22) 1 times scalar_store costs 12 in body
-0x4494d10 _4 >= 0 1 times scalar_stmt costs 4 in body
-0x4494d10 .MASK_LOAD (_5, 32B, _65) 1 times scalar_load costs 12 in body
-0x4494d10 _6 + pretmp_56 1 times scalar_stmt costs 4 in body
-0x4494d10 .MASK_LOAD (_10, 32B, _65) 1 times scalar_load costs 12 in body
-0x4494d10 _9 + _11 1 times scalar_stmt costs 4 in body
-0x4494d10 .MASK_STORE (_57, 32B, _65, _13) 1 times scalar_store costs 12 in body
+0x51c6c60 *_3 1 times scalar_load costs 12 in body
+0x51c6c60 *_55 1 times scalar_load costs 12 in body
+0x51c6c60 *_57 1 times scalar_load costs 12 in body
+0x51c6c60 _15 + pretmp_56 1 times scalar_stmt costs 4 in body
+0x51c6c60 _18 + pretmp_56 1 times scalar_stmt costs 4 in body
+0x51c6c60 _4 < 0 1 times scalar_stmt costs 4 in body
+0x51c6c60 .MASK_STORE (_21, 32B, _63, _22) 1 times scalar_store costs 12 in body
+0x51c6c60 _4 >= 0 1 times scalar_stmt costs 4 in body
+0x51c6c60 .MASK_LOAD (_5, 32B, _65) 1 times scalar_load costs 12 in body
+0x51c6c60 _6 + pretmp_56 1 times scalar_stmt costs 4 in body
+0x51c6c60 .MASK_LOAD (_10, 32B, _65) 1 times scalar_load costs 12 in body
+0x51c6c60 _9 + _11 1 times scalar_stmt costs 4 in body
+0x51c6c60 .MASK_STORE (_57, 32B, _65, _13) 1 times scalar_store costs 12 in body
 tsvc.c:5:5: note:   === vect_analyze_slp ===
 tsvc.c:5:5: note:   === vect_make_slp_decision ===
 tsvc.c:5:5: note:  vectorization_factor = 4, niters = 65535
@@ -1290,35 +1290,35 @@ tsvc.c:5:5: note:   ==> examining statement: ivtmp_51 = ivtmp_52 - 1;
 tsvc.c:5:5: note:   irrelevant.
 tsvc.c:5:5: note:   ==> examining statement: if (ivtmp_51 != 0)
 tsvc.c:5:5: note:   irrelevant.
-0x44992e0 *_3 1 times unaligned_load (misalign -1) costs 12 in body
-0x44992e0 *_55 1 times unaligned_load (misalign -1) costs 12 in body
-0x44992e0 *_57 1 times unaligned_load (misalign -1) costs 12 in body
-0x44992e0 _15 + pretmp_56 1 times vector_stmt costs 4 in body
-0x44992e0 _18 + pretmp_56 1 times vector_stmt costs 4 in body
-0x44992e0 _4 < 0 1 times scalar_to_vec costs 4 in prologue
-0x44992e0 _4 < 0 1 times vector_stmt costs 4 in body
-0x44992e0 .MASK_STORE (_21, 32B, _63, _22) 1 times unaligned_store (misalign -1) costs 12 in body
-0x44992e0 _4 >= 0 1 times scalar_to_vec costs 4 in prologue
-0x44992e0 _4 >= 0 1 times vector_stmt costs 4 in body
-0x44992e0 .MASK_LOAD (_5, 32B, _65) 1 times unaligned_load (misalign -1) costs 12 in body
-0x44992e0 _6 + pretmp_56 1 times vector_stmt costs 4 in body
-0x44992e0 .MASK_LOAD (_10, 32B, _65) 1 times unaligned_load (misalign -1) costs 12 in body
-0x44992e0 _9 + _11 1 times vector_stmt costs 4 in body
-0x44992e0 .MASK_STORE (_57, 32B, _65, _13) 1 times unaligned_store (misalign -1) costs 12 in body
+0x51c6fb0 *_3 1 times unaligned_load (misalign -1) costs 12 in body
+0x51c6fb0 *_55 1 times unaligned_load (misalign -1) costs 12 in body
+0x51c6fb0 *_57 1 times unaligned_load (misalign -1) costs 12 in body
+0x51c6fb0 _15 + pretmp_56 1 times vector_stmt costs 4 in body
+0x51c6fb0 _18 + pretmp_56 1 times vector_stmt costs 4 in body
+0x51c6fb0 _4 < 0 1 times scalar_to_vec costs 4 in prologue
+0x51c6fb0 _4 < 0 1 times vector_stmt costs 4 in body
+0x51c6fb0 .MASK_STORE (_21, 32B, _63, _22) 1 times unaligned_store (misalign -1) costs 12 in body
+0x51c6fb0 _4 >= 0 1 times scalar_to_vec costs 4 in prologue
+0x51c6fb0 _4 >= 0 1 times vector_stmt costs 4 in body
+0x51c6fb0 .MASK_LOAD (_5, 32B, _65) 1 times unaligned_load (misalign -1) costs 12 in body
+0x51c6fb0 _6 + pretmp_56 1 times vector_stmt costs 4 in body
+0x51c6fb0 .MASK_LOAD (_10, 32B, _65) 1 times unaligned_load (misalign -1) costs 12 in body
+0x51c6fb0 _9 + _11 1 times vector_stmt costs 4 in body
+0x51c6fb0 .MASK_STORE (_57, 32B, _65, _13) 1 times unaligned_store (misalign -1) costs 12 in body
 tsvc.c:5:5: note:  not using a fully-masked loop.
-0x44992e0 *_3 3 times scalar_load costs 36 in epilogue
-0x44992e0 *_55 3 times scalar_load costs 36 in epilogue
-0x44992e0 *_57 3 times scalar_load costs 36 in epilogue
-0x44992e0 _15 + pretmp_56 3 times scalar_stmt costs 12 in epilogue
-0x44992e0 _18 + pretmp_56 3 times scalar_stmt costs 12 in epilogue
-0x44992e0 _4 < 0 3 times scalar_stmt costs 12 in epilogue
-0x44992e0 .MASK_STORE (_21, 32B, _63, _22) 3 times scalar_store costs 36 in epilogue
-0x44992e0 _4 >= 0 3 times scalar_stmt costs 12 in epilogue
-0x44992e0 .MASK_LOAD (_5, 32B, _65) 3 times scalar_load costs 36 in epilogue
-0x44992e0 _6 + pretmp_56 3 times scalar_stmt costs 12 in epilogue
-0x44992e0 .MASK_LOAD (_10, 32B, _65) 3 times scalar_load costs 36 in epilogue
-0x44992e0 _9 + _11 3 times scalar_stmt costs 12 in epilogue
-0x44992e0 .MASK_STORE (_57, 32B, _65, _13) 3 times scalar_store costs 36 in epilogue
+0x51c6fb0 *_3 3 times scalar_load costs 36 in epilogue
+0x51c6fb0 *_55 3 times scalar_load costs 36 in epilogue
+0x51c6fb0 *_57 3 times scalar_load costs 36 in epilogue
+0x51c6fb0 _15 + pretmp_56 3 times scalar_stmt costs 12 in epilogue
+0x51c6fb0 _18 + pretmp_56 3 times scalar_stmt costs 12 in epilogue
+0x51c6fb0 _4 < 0 3 times scalar_stmt costs 12 in epilogue
+0x51c6fb0 .MASK_STORE (_21, 32B, _63, _22) 3 times scalar_store costs 36 in epilogue
+0x51c6fb0 _4 >= 0 3 times scalar_stmt costs 12 in epilogue
+0x51c6fb0 .MASK_LOAD (_5, 32B, _65) 3 times scalar_load costs 36 in epilogue
+0x51c6fb0 _6 + pretmp_56 3 times scalar_stmt costs 12 in epilogue
+0x51c6fb0 .MASK_LOAD (_10, 32B, _65) 3 times scalar_load costs 36 in epilogue
+0x51c6fb0 _9 + _11 3 times scalar_stmt costs 12 in epilogue
+0x51c6fb0 .MASK_STORE (_57, 32B, _65, _13) 3 times scalar_store costs 36 in epilogue
 tsvc.c:5:5: note:  Cost model analysis: 
   Vector inside of loop cost: 108
   Vector prologue cost: 8
@@ -1764,7 +1764,7 @@ Removing basic block 15
 
 Merging blocks 20 and 31
 fix_loop_structure: fixing up loops for function
-s161 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s161 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(4) int * vectp_a.72;
   vector(4) int * vectp_a.71;
@@ -2675,18 +2675,18 @@ tsvc.c:20:5: note:   ==> examining statement: if (ivtmp_45 != 0)
 tsvc.c:20:5: note:   skip.
 tsvc.c:20:5: note:   vectorization factor = 8
 tsvc.c:20:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x4316db0 *_3 1 times scalar_load costs 12 in body
-0x4316db0 *_47 1 times scalar_load costs 12 in body
-0x4316db0 *_49 1 times scalar_load costs 12 in body
-0x4316db0 _13 + pretmp_48 1 times scalar_stmt costs 4 in body
-0x4316db0 _16 + pretmp_48 1 times scalar_stmt costs 4 in body
-0x4316db0 _4 < 0 1 times scalar_stmt costs 4 in body
-0x4316db0 .MASK_STORE (_17, 32B, _55, _18) 1 times scalar_store costs 12 in body
-0x4316db0 _4 + pretmp_48 1 times scalar_stmt costs 4 in body
-0x4316db0 _4 >= 0 1 times scalar_stmt costs 4 in body
-0x4316db0 .MASK_LOAD (_8, 32B, _57) 1 times scalar_load costs 12 in body
-0x4316db0 _7 + _9 1 times scalar_stmt costs 4 in body
-0x4316db0 .MASK_STORE (_49, 32B, _57, _11) 1 times scalar_store costs 12 in body
+0x51cfb60 *_3 1 times scalar_load costs 12 in body
+0x51cfb60 *_47 1 times scalar_load costs 12 in body
+0x51cfb60 *_49 1 times scalar_load costs 12 in body
+0x51cfb60 _13 + pretmp_48 1 times scalar_stmt costs 4 in body
+0x51cfb60 _16 + pretmp_48 1 times scalar_stmt costs 4 in body
+0x51cfb60 _4 < 0 1 times scalar_stmt costs 4 in body
+0x51cfb60 .MASK_STORE (_17, 32B, _55, _18) 1 times scalar_store costs 12 in body
+0x51cfb60 _4 + pretmp_48 1 times scalar_stmt costs 4 in body
+0x51cfb60 _4 >= 0 1 times scalar_stmt costs 4 in body
+0x51cfb60 .MASK_LOAD (_8, 32B, _57) 1 times scalar_load costs 12 in body
+0x51cfb60 _7 + _9 1 times scalar_stmt costs 4 in body
+0x51cfb60 .MASK_STORE (_49, 32B, _57, _11) 1 times scalar_store costs 12 in body
 tsvc.c:20:5: note:   === vect_analyze_slp ===
 tsvc.c:20:5: note:   === vect_make_slp_decision ===
 tsvc.c:20:5: note:  vectorization_factor = 8, niters = 65535
@@ -2927,20 +2927,20 @@ tsvc.c:20:5: note:   ==> examining statement: ivtmp_45 = ivtmp_46 - 1;
 tsvc.c:20:5: note:   irrelevant.
 tsvc.c:20:5: note:   ==> examining statement: if (ivtmp_45 != 0)
 tsvc.c:20:5: note:   irrelevant.
-0x42ec2b0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x42ec2b0 *_47 1 times unaligned_load (misalign -1) costs 20 in body
-0x42ec2b0 *_49 1 times unaligned_load (misalign -1) costs 20 in body
-0x42ec2b0 _13 + pretmp_48 1 times vector_stmt costs 4 in body
-0x42ec2b0 _16 + pretmp_48 1 times vector_stmt costs 4 in body
-0x42ec2b0 _4 < 0 1 times scalar_to_vec costs 4 in prologue
-0x42ec2b0 _4 < 0 1 times vector_stmt costs 4 in body
-0x42ec2b0 .MASK_STORE (_17, 32B, _55, _18) 1 times unaligned_store (misalign -1) costs 20 in body
-0x42ec2b0 _4 + pretmp_48 1 times vector_stmt costs 4 in body
-0x42ec2b0 _4 >= 0 1 times scalar_to_vec costs 4 in prologue
-0x42ec2b0 _4 >= 0 1 times vector_stmt costs 4 in body
-0x42ec2b0 .MASK_LOAD (_8, 32B, _57) 1 times unaligned_load (misalign -1) costs 20 in body
-0x42ec2b0 _7 + _9 1 times vector_stmt costs 4 in body
-0x42ec2b0 .MASK_STORE (_49, 32B, _57, _11) 1 times unaligned_store (misalign -1) costs 20 in body
+0x5028ee0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x5028ee0 *_47 1 times unaligned_load (misalign -1) costs 20 in body
+0x5028ee0 *_49 1 times unaligned_load (misalign -1) costs 20 in body
+0x5028ee0 _13 + pretmp_48 1 times vector_stmt costs 4 in body
+0x5028ee0 _16 + pretmp_48 1 times vector_stmt costs 4 in body
+0x5028ee0 _4 < 0 1 times scalar_to_vec costs 4 in prologue
+0x5028ee0 _4 < 0 1 times vector_stmt costs 4 in body
+0x5028ee0 .MASK_STORE (_17, 32B, _55, _18) 1 times unaligned_store (misalign -1) costs 20 in body
+0x5028ee0 _4 + pretmp_48 1 times vector_stmt costs 4 in body
+0x5028ee0 _4 >= 0 1 times scalar_to_vec costs 4 in prologue
+0x5028ee0 _4 >= 0 1 times vector_stmt costs 4 in body
+0x5028ee0 .MASK_LOAD (_8, 32B, _57) 1 times unaligned_load (misalign -1) costs 20 in body
+0x5028ee0 _7 + _9 1 times vector_stmt costs 4 in body
+0x5028ee0 .MASK_STORE (_49, 32B, _57, _11) 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65534, + , 4294967295] != 0
   bounds on difference of bases: -65534 ... -65534
@@ -2978,21 +2978,21 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_30 = i_3
 Statement i_30 = i_35 + 1;
  is executed at most 65534 (bounded by 65534) + 1 times in loop 1.
 tsvc.c:20:5: note:  not using a fully-masked loop.
-0x42ec2b0 <unknown> 7 times vector_stmt costs 28 in prologue
+0x5028ee0 <unknown> 7 times vector_stmt costs 28 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x42ec2b0 <unknown> 1 times cond_branch_taken costs 16 in prologue
-0x42ec2b0 *_3 7 times scalar_load costs 84 in epilogue
-0x42ec2b0 *_47 7 times scalar_load costs 84 in epilogue
-0x42ec2b0 *_49 7 times scalar_load costs 84 in epilogue
-0x42ec2b0 _13 + pretmp_48 7 times scalar_stmt costs 28 in epilogue
-0x42ec2b0 _16 + pretmp_48 7 times scalar_stmt costs 28 in epilogue
-0x42ec2b0 _4 < 0 7 times scalar_stmt costs 28 in epilogue
-0x42ec2b0 .MASK_STORE (_17, 32B, _55, _18) 7 times scalar_store costs 84 in epilogue
-0x42ec2b0 _4 + pretmp_48 7 times scalar_stmt costs 28 in epilogue
-0x42ec2b0 _4 >= 0 7 times scalar_stmt costs 28 in epilogue
-0x42ec2b0 .MASK_LOAD (_8, 32B, _57) 7 times scalar_load costs 84 in epilogue
-0x42ec2b0 _7 + _9 7 times scalar_stmt costs 28 in epilogue
-0x42ec2b0 .MASK_STORE (_49, 32B, _57, _11) 7 times scalar_store costs 84 in epilogue
+0x5028ee0 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x5028ee0 *_3 7 times scalar_load costs 84 in epilogue
+0x5028ee0 *_47 7 times scalar_load costs 84 in epilogue
+0x5028ee0 *_49 7 times scalar_load costs 84 in epilogue
+0x5028ee0 _13 + pretmp_48 7 times scalar_stmt costs 28 in epilogue
+0x5028ee0 _16 + pretmp_48 7 times scalar_stmt costs 28 in epilogue
+0x5028ee0 _4 < 0 7 times scalar_stmt costs 28 in epilogue
+0x5028ee0 .MASK_STORE (_17, 32B, _55, _18) 7 times scalar_store costs 84 in epilogue
+0x5028ee0 _4 + pretmp_48 7 times scalar_stmt costs 28 in epilogue
+0x5028ee0 _4 >= 0 7 times scalar_stmt costs 28 in epilogue
+0x5028ee0 .MASK_LOAD (_8, 32B, _57) 7 times scalar_load costs 84 in epilogue
+0x5028ee0 _7 + _9 7 times scalar_stmt costs 28 in epilogue
+0x5028ee0 .MASK_STORE (_49, 32B, _57, _11) 7 times scalar_store costs 84 in epilogue
 tsvc.c:20:5: note:  Cost model analysis: 
   Vector inside of loop cost: 144
   Vector prologue cost: 52
@@ -3218,18 +3218,18 @@ tsvc.c:20:5: note:   ==> examining statement: if (ivtmp_45 != 0)
 tsvc.c:20:5: note:   skip.
 tsvc.c:20:5: note:   vectorization factor = 4
 tsvc.c:20:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x4340340 *_3 1 times scalar_load costs 12 in body
-0x4340340 *_47 1 times scalar_load costs 12 in body
-0x4340340 *_49 1 times scalar_load costs 12 in body
-0x4340340 _13 + pretmp_48 1 times scalar_stmt costs 4 in body
-0x4340340 _16 + pretmp_48 1 times scalar_stmt costs 4 in body
-0x4340340 _4 < 0 1 times scalar_stmt costs 4 in body
-0x4340340 .MASK_STORE (_17, 32B, _55, _18) 1 times scalar_store costs 12 in body
-0x4340340 _4 + pretmp_48 1 times scalar_stmt costs 4 in body
-0x4340340 _4 >= 0 1 times scalar_stmt costs 4 in body
-0x4340340 .MASK_LOAD (_8, 32B, _57) 1 times scalar_load costs 12 in body
-0x4340340 _7 + _9 1 times scalar_stmt costs 4 in body
-0x4340340 .MASK_STORE (_49, 32B, _57, _11) 1 times scalar_store costs 12 in body
+0x51cfb60 *_3 1 times scalar_load costs 12 in body
+0x51cfb60 *_47 1 times scalar_load costs 12 in body
+0x51cfb60 *_49 1 times scalar_load costs 12 in body
+0x51cfb60 _13 + pretmp_48 1 times scalar_stmt costs 4 in body
+0x51cfb60 _16 + pretmp_48 1 times scalar_stmt costs 4 in body
+0x51cfb60 _4 < 0 1 times scalar_stmt costs 4 in body
+0x51cfb60 .MASK_STORE (_17, 32B, _55, _18) 1 times scalar_store costs 12 in body
+0x51cfb60 _4 + pretmp_48 1 times scalar_stmt costs 4 in body
+0x51cfb60 _4 >= 0 1 times scalar_stmt costs 4 in body
+0x51cfb60 .MASK_LOAD (_8, 32B, _57) 1 times scalar_load costs 12 in body
+0x51cfb60 _7 + _9 1 times scalar_stmt costs 4 in body
+0x51cfb60 .MASK_STORE (_49, 32B, _57, _11) 1 times scalar_store costs 12 in body
 tsvc.c:20:5: note:   === vect_analyze_slp ===
 tsvc.c:20:5: note:   === vect_make_slp_decision ===
 tsvc.c:20:5: note:  vectorization_factor = 4, niters = 65535
@@ -3375,33 +3375,33 @@ tsvc.c:20:5: note:   ==> examining statement: ivtmp_45 = ivtmp_46 - 1;
 tsvc.c:20:5: note:   irrelevant.
 tsvc.c:20:5: note:   ==> examining statement: if (ivtmp_45 != 0)
 tsvc.c:20:5: note:   irrelevant.
-0x4459840 *_3 1 times unaligned_load (misalign -1) costs 12 in body
-0x4459840 *_47 1 times unaligned_load (misalign -1) costs 12 in body
-0x4459840 *_49 1 times unaligned_load (misalign -1) costs 12 in body
-0x4459840 _13 + pretmp_48 1 times vector_stmt costs 4 in body
-0x4459840 _16 + pretmp_48 1 times vector_stmt costs 4 in body
-0x4459840 _4 < 0 1 times scalar_to_vec costs 4 in prologue
-0x4459840 _4 < 0 1 times vector_stmt costs 4 in body
-0x4459840 .MASK_STORE (_17, 32B, _55, _18) 1 times unaligned_store (misalign -1) costs 12 in body
-0x4459840 _4 + pretmp_48 1 times vector_stmt costs 4 in body
-0x4459840 _4 >= 0 1 times scalar_to_vec costs 4 in prologue
-0x4459840 _4 >= 0 1 times vector_stmt costs 4 in body
-0x4459840 .MASK_LOAD (_8, 32B, _57) 1 times unaligned_load (misalign -1) costs 12 in body
-0x4459840 _7 + _9 1 times vector_stmt costs 4 in body
-0x4459840 .MASK_STORE (_49, 32B, _57, _11) 1 times unaligned_store (misalign -1) costs 12 in body
+0x51eb380 *_3 1 times unaligned_load (misalign -1) costs 12 in body
+0x51eb380 *_47 1 times unaligned_load (misalign -1) costs 12 in body
+0x51eb380 *_49 1 times unaligned_load (misalign -1) costs 12 in body
+0x51eb380 _13 + pretmp_48 1 times vector_stmt costs 4 in body
+0x51eb380 _16 + pretmp_48 1 times vector_stmt costs 4 in body
+0x51eb380 _4 < 0 1 times scalar_to_vec costs 4 in prologue
+0x51eb380 _4 < 0 1 times vector_stmt costs 4 in body
+0x51eb380 .MASK_STORE (_17, 32B, _55, _18) 1 times unaligned_store (misalign -1) costs 12 in body
+0x51eb380 _4 + pretmp_48 1 times vector_stmt costs 4 in body
+0x51eb380 _4 >= 0 1 times scalar_to_vec costs 4 in prologue
+0x51eb380 _4 >= 0 1 times vector_stmt costs 4 in body
+0x51eb380 .MASK_LOAD (_8, 32B, _57) 1 times unaligned_load (misalign -1) costs 12 in body
+0x51eb380 _7 + _9 1 times vector_stmt costs 4 in body
+0x51eb380 .MASK_STORE (_49, 32B, _57, _11) 1 times unaligned_store (misalign -1) costs 12 in body
 tsvc.c:20:5: note:  not using a fully-masked loop.
-0x4459840 *_3 3 times scalar_load costs 36 in epilogue
-0x4459840 *_47 3 times scalar_load costs 36 in epilogue
-0x4459840 *_49 3 times scalar_load costs 36 in epilogue
-0x4459840 _13 + pretmp_48 3 times scalar_stmt costs 12 in epilogue
-0x4459840 _16 + pretmp_48 3 times scalar_stmt costs 12 in epilogue
-0x4459840 _4 < 0 3 times scalar_stmt costs 12 in epilogue
-0x4459840 .MASK_STORE (_17, 32B, _55, _18) 3 times scalar_store costs 36 in epilogue
-0x4459840 _4 + pretmp_48 3 times scalar_stmt costs 12 in epilogue
-0x4459840 _4 >= 0 3 times scalar_stmt costs 12 in epilogue
-0x4459840 .MASK_LOAD (_8, 32B, _57) 3 times scalar_load costs 36 in epilogue
-0x4459840 _7 + _9 3 times scalar_stmt costs 12 in epilogue
-0x4459840 .MASK_STORE (_49, 32B, _57, _11) 3 times scalar_store costs 36 in epilogue
+0x51eb380 *_3 3 times scalar_load costs 36 in epilogue
+0x51eb380 *_47 3 times scalar_load costs 36 in epilogue
+0x51eb380 *_49 3 times scalar_load costs 36 in epilogue
+0x51eb380 _13 + pretmp_48 3 times scalar_stmt costs 12 in epilogue
+0x51eb380 _16 + pretmp_48 3 times scalar_stmt costs 12 in epilogue
+0x51eb380 _4 < 0 3 times scalar_stmt costs 12 in epilogue
+0x51eb380 .MASK_STORE (_17, 32B, _55, _18) 3 times scalar_store costs 36 in epilogue
+0x51eb380 _4 + pretmp_48 3 times scalar_stmt costs 12 in epilogue
+0x51eb380 _4 >= 0 3 times scalar_stmt costs 12 in epilogue
+0x51eb380 .MASK_LOAD (_8, 32B, _57) 3 times scalar_load costs 36 in epilogue
+0x51eb380 _7 + _9 3 times scalar_stmt costs 12 in epilogue
+0x51eb380 .MASK_STORE (_49, 32B, _57, _11) 3 times scalar_store costs 36 in epilogue
 tsvc.c:20:5: note:  Cost model analysis: 
   Vector inside of loop cost: 96
   Vector prologue cost: 8
@@ -3815,7 +3815,7 @@ Removing basic block 15
 
 Merging blocks 20 and 31
 fix_loop_structure: fixing up loops for function
-s1161 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s1161 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(4) int * vectp_a.154;
   vector(4) int * vectp_a.153;
@@ -4503,12 +4503,12 @@ tsvc.c:35:5: note:   ==> examining statement: if (ivtmp_31 != 0)
 tsvc.c:35:5: note:   skip.
 tsvc.c:35:5: note:   vectorization factor = 8
 tsvc.c:35:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x44b7380 *_3 1 times scalar_load costs 12 in body
-0x44b7380 *_5 1 times scalar_load costs 12 in body
-0x44b7380 _4 + _6 1 times scalar_stmt costs 4 in body
-0x44b7380 *_8 1 times scalar_load costs 12 in body
-0x44b7380 _7 + _9 1 times scalar_stmt costs 4 in body
-0x44b7380 _10 1 times scalar_store costs 12 in body
+0x5052f60 *_3 1 times scalar_load costs 12 in body
+0x5052f60 *_5 1 times scalar_load costs 12 in body
+0x5052f60 _4 + _6 1 times scalar_stmt costs 4 in body
+0x5052f60 *_8 1 times scalar_load costs 12 in body
+0x5052f60 _7 + _9 1 times scalar_stmt costs 4 in body
+0x5052f60 _10 1 times scalar_store costs 12 in body
 tsvc.c:35:5: note:   === vect_analyze_slp ===
 tsvc.c:35:5: note:   === vect_make_slp_decision ===
 tsvc.c:35:5: note:  vectorization_factor = 8, niters = 65535
@@ -4656,12 +4656,12 @@ tsvc.c:35:5: note:   ==> examining statement: ivtmp_31 = ivtmp_38 - 1;
 tsvc.c:35:5: note:   irrelevant.
 tsvc.c:35:5: note:   ==> examining statement: if (ivtmp_31 != 0)
 tsvc.c:35:5: note:   irrelevant.
-0x449d090 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x449d090 *_5 1 times unaligned_load (misalign -1) costs 20 in body
-0x449d090 _4 + _6 1 times vector_stmt costs 4 in body
-0x449d090 *_8 1 times unaligned_load (misalign -1) costs 20 in body
-0x449d090 _7 + _9 1 times vector_stmt costs 4 in body
-0x449d090 _10 1 times unaligned_store (misalign -1) costs 20 in body
+0x51c55d0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x51c55d0 *_5 1 times unaligned_load (misalign -1) costs 20 in body
+0x51c55d0 _4 + _6 1 times vector_stmt costs 4 in body
+0x51c55d0 *_8 1 times unaligned_load (misalign -1) costs 20 in body
+0x51c55d0 _7 + _9 1 times vector_stmt costs 4 in body
+0x51c55d0 _10 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65534, + , 4294967295] != 0
   bounds on difference of bases: -65534 ... -65534
@@ -4686,15 +4686,15 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_18 = i_2
 Statement i_18 = i_23 + 1;
  is executed at most 65534 (bounded by 65534) + 1 times in loop 1.
 tsvc.c:35:5: note:  not using a fully-masked loop.
-0x449d090 <unknown> 2 times vector_stmt costs 8 in prologue
+0x51c55d0 <unknown> 2 times vector_stmt costs 8 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x449d090 <unknown> 1 times cond_branch_taken costs 16 in prologue
-0x449d090 *_3 7 times scalar_load costs 84 in epilogue
-0x449d090 *_5 7 times scalar_load costs 84 in epilogue
-0x449d090 _4 + _6 7 times scalar_stmt costs 28 in epilogue
-0x449d090 *_8 7 times scalar_load costs 84 in epilogue
-0x449d090 _7 + _9 7 times scalar_stmt costs 28 in epilogue
-0x449d090 _10 7 times scalar_store costs 84 in epilogue
+0x51c55d0 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x51c55d0 *_3 7 times scalar_load costs 84 in epilogue
+0x51c55d0 *_5 7 times scalar_load costs 84 in epilogue
+0x51c55d0 _4 + _6 7 times scalar_stmt costs 28 in epilogue
+0x51c55d0 *_8 7 times scalar_load costs 84 in epilogue
+0x51c55d0 _7 + _9 7 times scalar_stmt costs 28 in epilogue
+0x51c55d0 _10 7 times scalar_store costs 84 in epilogue
 tsvc.c:35:5: note:  Cost model analysis: 
   Vector inside of loop cost: 88
   Vector prologue cost: 24
@@ -4847,12 +4847,12 @@ tsvc.c:35:5: note:   ==> examining statement: if (ivtmp_31 != 0)
 tsvc.c:35:5: note:   skip.
 tsvc.c:35:5: note:   vectorization factor = 4
 tsvc.c:35:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x44a1670 *_3 1 times scalar_load costs 12 in body
-0x44a1670 *_5 1 times scalar_load costs 12 in body
-0x44a1670 _4 + _6 1 times scalar_stmt costs 4 in body
-0x44a1670 *_8 1 times scalar_load costs 12 in body
-0x44a1670 _7 + _9 1 times scalar_stmt costs 4 in body
-0x44a1670 _10 1 times scalar_store costs 12 in body
+0x5089590 *_3 1 times scalar_load costs 12 in body
+0x5089590 *_5 1 times scalar_load costs 12 in body
+0x5089590 _4 + _6 1 times scalar_stmt costs 4 in body
+0x5089590 *_8 1 times scalar_load costs 12 in body
+0x5089590 _7 + _9 1 times scalar_stmt costs 4 in body
+0x5089590 _10 1 times scalar_store costs 12 in body
 tsvc.c:35:5: note:   === vect_analyze_slp ===
 tsvc.c:35:5: note:   === vect_make_slp_decision ===
 tsvc.c:35:5: note:  vectorization_factor = 4, niters = 65535
@@ -4950,19 +4950,19 @@ tsvc.c:35:5: note:   ==> examining statement: ivtmp_31 = ivtmp_38 - 1;
 tsvc.c:35:5: note:   irrelevant.
 tsvc.c:35:5: note:   ==> examining statement: if (ivtmp_31 != 0)
 tsvc.c:35:5: note:   irrelevant.
-0x44959e0 *_3 1 times unaligned_load (misalign -1) costs 12 in body
-0x44959e0 *_5 1 times unaligned_load (misalign -1) costs 12 in body
-0x44959e0 _4 + _6 1 times vector_stmt costs 4 in body
-0x44959e0 *_8 1 times unaligned_load (misalign -1) costs 12 in body
-0x44959e0 _7 + _9 1 times vector_stmt costs 4 in body
-0x44959e0 _10 1 times unaligned_store (misalign -1) costs 12 in body
+0x518c860 *_3 1 times unaligned_load (misalign -1) costs 12 in body
+0x518c860 *_5 1 times unaligned_load (misalign -1) costs 12 in body
+0x518c860 _4 + _6 1 times vector_stmt costs 4 in body
+0x518c860 *_8 1 times unaligned_load (misalign -1) costs 12 in body
+0x518c860 _7 + _9 1 times vector_stmt costs 4 in body
+0x518c860 _10 1 times unaligned_store (misalign -1) costs 12 in body
 tsvc.c:35:5: note:  not using a fully-masked loop.
-0x44959e0 *_3 3 times scalar_load costs 36 in epilogue
-0x44959e0 *_5 3 times scalar_load costs 36 in epilogue
-0x44959e0 _4 + _6 3 times scalar_stmt costs 12 in epilogue
-0x44959e0 *_8 3 times scalar_load costs 36 in epilogue
-0x44959e0 _7 + _9 3 times scalar_stmt costs 12 in epilogue
-0x44959e0 _10 3 times scalar_store costs 36 in epilogue
+0x518c860 *_3 3 times scalar_load costs 36 in epilogue
+0x518c860 *_5 3 times scalar_load costs 36 in epilogue
+0x518c860 _4 + _6 3 times scalar_stmt costs 12 in epilogue
+0x518c860 *_8 3 times scalar_load costs 36 in epilogue
+0x518c860 _7 + _9 3 times scalar_stmt costs 12 in epilogue
+0x518c860 _10 3 times scalar_store costs 36 in epilogue
 tsvc.c:35:5: note:  Cost model analysis: 
   Vector inside of loop cost: 56
   Vector prologue cost: 0
@@ -5256,7 +5256,7 @@ Removing basic block 9
 
 Merging blocks 13 and 21
 fix_loop_structure: fixing up loops for function
-s162 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s162 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(4) int * vectp_a.213;
   vector(4) int * vectp_a.212;
@@ -5782,13 +5782,13 @@ tsvc.c:42:5: note:   ==> examining statement: if (ivtmp_29 != 0)
 tsvc.c:42:5: note:   skip.
 tsvc.c:42:5: note:   vectorization factor = 8
 tsvc.c:42:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x4460a90 *_3 1 times scalar_load costs 12 in body
-0x4460a90 _4 > 0 1 times scalar_stmt costs 4 in body
-0x4460a90 .MASK_LOAD (_5, 32B, _41) 1 times scalar_load costs 12 in body
-0x4460a90 .MASK_LOAD (_7, 32B, _41) 1 times scalar_load costs 12 in body
-0x4460a90 _4 + _8 1 times scalar_stmt costs 4 in body
-0x4460a90 _6 + _9 1 times scalar_stmt costs 4 in body
-0x4460a90 .MASK_STORE (_5, 32B, _41, _10) 1 times scalar_store costs 12 in body
+0x51ba4d0 *_3 1 times scalar_load costs 12 in body
+0x51ba4d0 _4 > 0 1 times scalar_stmt costs 4 in body
+0x51ba4d0 .MASK_LOAD (_5, 32B, _41) 1 times scalar_load costs 12 in body
+0x51ba4d0 .MASK_LOAD (_7, 32B, _41) 1 times scalar_load costs 12 in body
+0x51ba4d0 _4 + _8 1 times scalar_stmt costs 4 in body
+0x51ba4d0 _6 + _9 1 times scalar_stmt costs 4 in body
+0x51ba4d0 .MASK_STORE (_5, 32B, _41, _10) 1 times scalar_store costs 12 in body
 tsvc.c:42:5: note:   === vect_analyze_slp ===
 tsvc.c:42:5: note:   === vect_make_slp_decision ===
 tsvc.c:42:5: note:  vectorization_factor = 8, niters = 65536
@@ -5927,14 +5927,14 @@ tsvc.c:42:5: note:   ==> examining statement: ivtmp_29 = ivtmp_30 - 1;
 tsvc.c:42:5: note:   irrelevant.
 tsvc.c:42:5: note:   ==> examining statement: if (ivtmp_29 != 0)
 tsvc.c:42:5: note:   irrelevant.
-0x44992e0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x44992e0 _4 > 0 1 times scalar_to_vec costs 4 in prologue
-0x44992e0 _4 > 0 1 times vector_stmt costs 4 in body
-0x44992e0 .MASK_LOAD (_5, 32B, _41) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44992e0 .MASK_LOAD (_7, 32B, _41) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44992e0 _4 + _8 1 times vector_stmt costs 4 in body
-0x44992e0 _6 + _9 1 times vector_stmt costs 4 in body
-0x44992e0 .MASK_STORE (_5, 32B, _41, _10) 1 times unaligned_store (misalign -1) costs 20 in body
+0x51c55d0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x51c55d0 _4 > 0 1 times scalar_to_vec costs 4 in prologue
+0x51c55d0 _4 > 0 1 times vector_stmt costs 4 in body
+0x51c55d0 .MASK_LOAD (_5, 32B, _41) 1 times unaligned_load (misalign -1) costs 20 in body
+0x51c55d0 .MASK_LOAD (_7, 32B, _41) 1 times unaligned_load (misalign -1) costs 20 in body
+0x51c55d0 _4 + _8 1 times vector_stmt costs 4 in body
+0x51c55d0 _6 + _9 1 times vector_stmt costs 4 in body
+0x51c55d0 .MASK_STORE (_5, 32B, _41, _10) 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65535, + , 4294967295] != 0
   bounds on difference of bases: -65535 ... -65535
@@ -5964,9 +5964,9 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_19 = i_2
 Statement i_19 = i_25 + 1;
  is executed at most 65535 (bounded by 65535) + 1 times in loop 1.
 tsvc.c:42:5: note:  not using a fully-masked loop.
-0x44992e0 <unknown> 2 times vector_stmt costs 8 in prologue
+0x51c55d0 <unknown> 2 times vector_stmt costs 8 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x44992e0 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x51c55d0 <unknown> 1 times cond_branch_taken costs 16 in prologue
 tsvc.c:42:5: note:  Cost model analysis: 
   Vector inside of loop cost: 92
   Vector prologue cost: 28
@@ -6105,7 +6105,7 @@ Removing basic block 15
 
 
 fix_loop_structure: fixing up loops for function
-s271 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s271 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(8) int * vectp_a.251;
   vector(8) int * vectp_a.250;
@@ -6810,19 +6810,19 @@ tsvc.c:52:5: note:   ==> examining statement: if (ivtmp_39 != 0)
 tsvc.c:52:5: note:   skip.
 tsvc.c:52:5: note:   vectorization factor = 8
 tsvc.c:52:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x449a800 *_3 1 times scalar_load costs 12 in body
-0x449a800 _4 > 499 1 times scalar_stmt costs 4 in body
-0x449a800 .MASK_LOAD (_5, 32B, _59) 1 times scalar_load costs 12 in body
-0x449a800 .MASK_LOAD (_7, 32B, _59) 1 times scalar_load costs 12 in body
-0x449a800 .MASK_LOAD (_9, 32B, _59) 1 times scalar_load costs 12 in body
-0x449a800 _8 + _10 1 times scalar_stmt costs 4 in body
-0x449a800 _6 + _11 1 times scalar_stmt costs 4 in body
-0x449a800 .MASK_STORE (_5, 32B, _59, _12) 1 times scalar_store costs 12 in body
-0x449a800 .MASK_LOAD (_13, 32B, _59) 1 times scalar_load costs 12 in body
-0x449a800 .MASK_LOAD (_7, 32B, _59) 1 times scalar_load costs 12 in body
-0x449a800 _15 * 2 1 times scalar_stmt costs 12 in body
-0x449a800 _14 + _16 1 times scalar_stmt costs 4 in body
-0x449a800 .MASK_STORE (_13, 32B, _59, _17) 1 times scalar_store costs 12 in body
+0x51e8af0 *_3 1 times scalar_load costs 12 in body
+0x51e8af0 _4 > 499 1 times scalar_stmt costs 4 in body
+0x51e8af0 .MASK_LOAD (_5, 32B, _59) 1 times scalar_load costs 12 in body
+0x51e8af0 .MASK_LOAD (_7, 32B, _59) 1 times scalar_load costs 12 in body
+0x51e8af0 .MASK_LOAD (_9, 32B, _59) 1 times scalar_load costs 12 in body
+0x51e8af0 _8 + _10 1 times scalar_stmt costs 4 in body
+0x51e8af0 _6 + _11 1 times scalar_stmt costs 4 in body
+0x51e8af0 .MASK_STORE (_5, 32B, _59, _12) 1 times scalar_store costs 12 in body
+0x51e8af0 .MASK_LOAD (_13, 32B, _59) 1 times scalar_load costs 12 in body
+0x51e8af0 .MASK_LOAD (_7, 32B, _59) 1 times scalar_load costs 12 in body
+0x51e8af0 _15 * 2 1 times scalar_stmt costs 12 in body
+0x51e8af0 _14 + _16 1 times scalar_stmt costs 4 in body
+0x51e8af0 .MASK_STORE (_13, 32B, _59, _17) 1 times scalar_store costs 12 in body
 tsvc.c:52:5: note:   === vect_analyze_slp ===
 tsvc.c:52:5: note:   === vect_make_slp_decision ===
 tsvc.c:52:5: note:  vectorization_factor = 8, niters = 65536
@@ -7079,21 +7079,21 @@ tsvc.c:52:5: note:   ==> examining statement: ivtmp_39 = ivtmp_40 - 1;
 tsvc.c:52:5: note:   irrelevant.
 tsvc.c:52:5: note:   ==> examining statement: if (ivtmp_39 != 0)
 tsvc.c:52:5: note:   irrelevant.
-0x43126b0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x43126b0 _4 > 499 1 times scalar_to_vec costs 4 in prologue
-0x43126b0 _4 > 499 1 times vector_stmt costs 4 in body
-0x43126b0 .MASK_LOAD (_5, 32B, _59) 1 times unaligned_load (misalign -1) costs 20 in body
-0x43126b0 .MASK_LOAD (_7, 32B, _59) 1 times unaligned_load (misalign -1) costs 20 in body
-0x43126b0 .MASK_LOAD (_9, 32B, _59) 1 times unaligned_load (misalign -1) costs 20 in body
-0x43126b0 _8 + _10 1 times vector_stmt costs 4 in body
-0x43126b0 _6 + _11 1 times vector_stmt costs 4 in body
-0x43126b0 .MASK_STORE (_5, 32B, _59, _12) 1 times unaligned_store (misalign -1) costs 20 in body
-0x43126b0 .MASK_LOAD (_13, 32B, _59) 1 times unaligned_load (misalign -1) costs 20 in body
-0x43126b0 .MASK_LOAD (_7, 32B, _59) 1 times unaligned_load (misalign -1) costs 20 in body
-0x43126b0 _15 * 2 1 times scalar_to_vec costs 4 in prologue
-0x43126b0 _15 * 2 1 times vector_stmt costs 16 in body
-0x43126b0 _14 + _16 1 times vector_stmt costs 4 in body
-0x43126b0 .MASK_STORE (_13, 32B, _59, _17) 1 times unaligned_store (misalign -1) costs 20 in body
+0x521c450 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x521c450 _4 > 499 1 times scalar_to_vec costs 4 in prologue
+0x521c450 _4 > 499 1 times vector_stmt costs 4 in body
+0x521c450 .MASK_LOAD (_5, 32B, _59) 1 times unaligned_load (misalign -1) costs 20 in body
+0x521c450 .MASK_LOAD (_7, 32B, _59) 1 times unaligned_load (misalign -1) costs 20 in body
+0x521c450 .MASK_LOAD (_9, 32B, _59) 1 times unaligned_load (misalign -1) costs 20 in body
+0x521c450 _8 + _10 1 times vector_stmt costs 4 in body
+0x521c450 _6 + _11 1 times vector_stmt costs 4 in body
+0x521c450 .MASK_STORE (_5, 32B, _59, _12) 1 times unaligned_store (misalign -1) costs 20 in body
+0x521c450 .MASK_LOAD (_13, 32B, _59) 1 times unaligned_load (misalign -1) costs 20 in body
+0x521c450 .MASK_LOAD (_7, 32B, _59) 1 times unaligned_load (misalign -1) costs 20 in body
+0x521c450 _15 * 2 1 times scalar_to_vec costs 4 in prologue
+0x521c450 _15 * 2 1 times vector_stmt costs 16 in body
+0x521c450 _14 + _16 1 times vector_stmt costs 4 in body
+0x521c450 .MASK_STORE (_13, 32B, _59, _17) 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65535, + , 4294967295] != 0
   bounds on difference of bases: -65535 ... -65535
@@ -7131,9 +7131,9 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_29 = i_3
 Statement i_29 = i_36 + 1;
  is executed at most 65535 (bounded by 65535) + 1 times in loop 1.
 tsvc.c:52:5: note:  not using a fully-masked loop.
-0x43126b0 <unknown> 7 times vector_stmt costs 28 in prologue
+0x521c450 <unknown> 7 times vector_stmt costs 28 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x43126b0 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x521c450 <unknown> 1 times cond_branch_taken costs 16 in prologue
 tsvc.c:52:5: note:  Cost model analysis: 
   Vector inside of loop cost: 192
   Vector prologue cost: 52
@@ -7364,7 +7364,7 @@ Removing basic block 15
 
 
 fix_loop_structure: fixing up loops for function
-s272 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s272 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(8) int * vectp_b.302;
   vector(8) int * vectp_b.301;
@@ -8545,26 +8545,26 @@ tsvc.c:63:5: note:   ==> examining statement: if (ivtmp_54 != 0)
 tsvc.c:63:5: note:   skip.
 tsvc.c:63:5: note:   vectorization factor = 8
 tsvc.c:63:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x455b3d0 *_3 1 times scalar_load costs 12 in body
-0x455b3d0 *_5 1 times scalar_load costs 12 in body
-0x455b3d0 *_7 1 times scalar_load costs 12 in body
-0x455b3d0 _6 + _8 1 times scalar_stmt costs 4 in body
-0x455b3d0 _4 + _9 1 times scalar_stmt costs 4 in body
-0x455b3d0 _10 1 times scalar_store costs 12 in body
-0x455b3d0 _10 < 0 1 times scalar_stmt costs 4 in body
-0x455b3d0 .MASK_LOAD (_11, 32B, _73) 1 times scalar_load costs 12 in body
-0x455b3d0 *_5 1 times scalar_load costs 12 in body
-0x455b3d0 *_7 1 times scalar_load costs 12 in body
-0x455b3d0 _13 + _14 1 times scalar_stmt costs 4 in body
-0x455b3d0 _12 + _15 1 times scalar_stmt costs 4 in body
-0x455b3d0 .MASK_STORE (_11, 32B, _73, _16) 1 times scalar_store costs 12 in body
-0x455b3d0 *_3 1 times scalar_load costs 12 in body
-0x455b3d0 _10 >= 0 ? _10 : pretmp_63 1 times scalar_stmt costs 4 in body
-0x455b3d0 *_17 1 times scalar_load costs 12 in body
-0x455b3d0 *_5 1 times scalar_load costs 12 in body
-0x455b3d0 _20 + prephitmp_64 1 times scalar_stmt costs 4 in body
-0x455b3d0 _18 + _21 1 times scalar_stmt costs 4 in body
-0x455b3d0 _22 1 times scalar_store costs 12 in body
+0x528c4c0 *_3 1 times scalar_load costs 12 in body
+0x528c4c0 *_5 1 times scalar_load costs 12 in body
+0x528c4c0 *_7 1 times scalar_load costs 12 in body
+0x528c4c0 _6 + _8 1 times scalar_stmt costs 4 in body
+0x528c4c0 _4 + _9 1 times scalar_stmt costs 4 in body
+0x528c4c0 _10 1 times scalar_store costs 12 in body
+0x528c4c0 _10 < 0 1 times scalar_stmt costs 4 in body
+0x528c4c0 .MASK_LOAD (_11, 32B, _73) 1 times scalar_load costs 12 in body
+0x528c4c0 *_5 1 times scalar_load costs 12 in body
+0x528c4c0 *_7 1 times scalar_load costs 12 in body
+0x528c4c0 _13 + _14 1 times scalar_stmt costs 4 in body
+0x528c4c0 _12 + _15 1 times scalar_stmt costs 4 in body
+0x528c4c0 .MASK_STORE (_11, 32B, _73, _16) 1 times scalar_store costs 12 in body
+0x528c4c0 *_3 1 times scalar_load costs 12 in body
+0x528c4c0 _10 >= 0 ? _10 : pretmp_63 1 times scalar_stmt costs 4 in body
+0x528c4c0 *_17 1 times scalar_load costs 12 in body
+0x528c4c0 *_5 1 times scalar_load costs 12 in body
+0x528c4c0 _20 + prephitmp_64 1 times scalar_stmt costs 4 in body
+0x528c4c0 _18 + _21 1 times scalar_stmt costs 4 in body
+0x528c4c0 _22 1 times scalar_store costs 12 in body
 tsvc.c:63:5: note:   === vect_analyze_slp ===
 tsvc.c:63:5: note:   === vect_make_slp_decision ===
 tsvc.c:63:5: note:  vectorization_factor = 8, niters = 65536
@@ -8977,28 +8977,28 @@ tsvc.c:63:5: note:   ==> examining statement: ivtmp_54 = ivtmp_55 - 1;
 tsvc.c:63:5: note:   irrelevant.
 tsvc.c:63:5: note:   ==> examining statement: if (ivtmp_54 != 0)
 tsvc.c:63:5: note:   irrelevant.
-0x4459840 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x4459840 *_5 1 times unaligned_load (misalign -1) costs 20 in body
-0x4459840 *_7 1 times unaligned_load (misalign -1) costs 20 in body
-0x4459840 _6 + _8 1 times vector_stmt costs 4 in body
-0x4459840 _4 + _9 1 times vector_stmt costs 4 in body
-0x4459840 _10 1 times unaligned_store (misalign -1) costs 20 in body
-0x4459840 _10 < 0 1 times scalar_to_vec costs 4 in prologue
-0x4459840 _10 < 0 1 times vector_stmt costs 4 in body
-0x4459840 .MASK_LOAD (_11, 32B, _73) 1 times unaligned_load (misalign -1) costs 20 in body
-0x4459840 *_5 1 times unaligned_load (misalign -1) costs 20 in body
-0x4459840 *_7 1 times unaligned_load (misalign -1) costs 20 in body
-0x4459840 _13 + _14 1 times vector_stmt costs 4 in body
-0x4459840 _12 + _15 1 times vector_stmt costs 4 in body
-0x4459840 .MASK_STORE (_11, 32B, _73, _16) 1 times unaligned_store (misalign -1) costs 20 in body
-0x4459840 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x4459840 _10 >= 0 ? _10 : pretmp_63 1 times scalar_to_vec costs 4 in prologue
-0x4459840 _10 >= 0 ? _10 : pretmp_63 1 times vector_stmt costs 4 in body
-0x4459840 *_17 1 times unaligned_load (misalign -1) costs 20 in body
-0x4459840 *_5 1 times unaligned_load (misalign -1) costs 20 in body
-0x4459840 _20 + prephitmp_64 1 times vector_stmt costs 4 in body
-0x4459840 _18 + _21 1 times vector_stmt costs 4 in body
-0x4459840 _22 1 times unaligned_store (misalign -1) costs 20 in body
+0x5087290 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x5087290 *_5 1 times unaligned_load (misalign -1) costs 20 in body
+0x5087290 *_7 1 times unaligned_load (misalign -1) costs 20 in body
+0x5087290 _6 + _8 1 times vector_stmt costs 4 in body
+0x5087290 _4 + _9 1 times vector_stmt costs 4 in body
+0x5087290 _10 1 times unaligned_store (misalign -1) costs 20 in body
+0x5087290 _10 < 0 1 times scalar_to_vec costs 4 in prologue
+0x5087290 _10 < 0 1 times vector_stmt costs 4 in body
+0x5087290 .MASK_LOAD (_11, 32B, _73) 1 times unaligned_load (misalign -1) costs 20 in body
+0x5087290 *_5 1 times unaligned_load (misalign -1) costs 20 in body
+0x5087290 *_7 1 times unaligned_load (misalign -1) costs 20 in body
+0x5087290 _13 + _14 1 times vector_stmt costs 4 in body
+0x5087290 _12 + _15 1 times vector_stmt costs 4 in body
+0x5087290 .MASK_STORE (_11, 32B, _73, _16) 1 times unaligned_store (misalign -1) costs 20 in body
+0x5087290 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x5087290 _10 >= 0 ? _10 : pretmp_63 1 times scalar_to_vec costs 4 in prologue
+0x5087290 _10 >= 0 ? _10 : pretmp_63 1 times vector_stmt costs 4 in body
+0x5087290 *_17 1 times unaligned_load (misalign -1) costs 20 in body
+0x5087290 *_5 1 times unaligned_load (misalign -1) costs 20 in body
+0x5087290 _20 + prephitmp_64 1 times vector_stmt costs 4 in body
+0x5087290 _18 + _21 1 times vector_stmt costs 4 in body
+0x5087290 _22 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65535, + , 4294967295] != 0
   bounds on difference of bases: -65535 ... -65535
@@ -9036,9 +9036,9 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_35 = i_4
 Statement i_35 = i_44 + 1;
  is executed at most 65535 (bounded by 65535) + 1 times in loop 1.
 tsvc.c:63:5: note:  not using a fully-masked loop.
-0x4459840 <unknown> 9 times vector_stmt costs 36 in prologue
+0x5087290 <unknown> 9 times vector_stmt costs 36 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x4459840 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x5087290 <unknown> 1 times cond_branch_taken costs 16 in prologue
 tsvc.c:63:5: note:  Cost model analysis: 
   Vector inside of loop cost: 272
   Vector prologue cost: 60
@@ -9331,7 +9331,7 @@ Removing basic block 15
 
 
 fix_loop_structure: fixing up loops for function
-s273 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s273 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(8) int * vectp_c.373;
   vector(8) int * vectp_c.372;
@@ -10394,22 +10394,22 @@ tsvc.c:73:5: note:   ==> examining statement: if (ivtmp_53 != 0)
 tsvc.c:73:5: note:   skip.
 tsvc.c:73:5: note:   vectorization factor = 8
 tsvc.c:73:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x44c5fc0 *_3 1 times scalar_load costs 12 in body
-0x44c5fc0 *_5 1 times scalar_load costs 12 in body
-0x44c5fc0 _4 + _6 1 times scalar_stmt costs 4 in body
-0x44c5fc0 *_8 1 times scalar_load costs 12 in body
-0x44c5fc0 _7 + _9 1 times scalar_stmt costs 4 in body
-0x44c5fc0 _11 1 times scalar_store costs 12 in body
-0x44c5fc0 _11 > 0 1 times scalar_stmt costs 4 in body
-0x44c5fc0 .MASK_LOAD (_12, 32B, _61) 1 times scalar_load costs 12 in body
-0x44c5fc0 _11 + _13 1 times scalar_stmt costs 4 in body
-0x44c5fc0 .MASK_STORE (_12, 32B, _61, _14) 1 times scalar_store costs 12 in body
-0x44c5fc0 *_8 1 times scalar_load costs 12 in body
-0x44c5fc0 *_5 1 times scalar_load costs 12 in body
-0x44c5fc0 _15 + _16 1 times scalar_stmt costs 4 in body
-0x44c5fc0 *_10 1 times scalar_load costs 12 in body
-0x44c5fc0 _11 <= 0 ? _17 : _ifc__62 1 times scalar_stmt costs 4 in body
-0x44c5fc0 _ifc__64 1 times scalar_store costs 12 in body
+0x5280c10 *_3 1 times scalar_load costs 12 in body
+0x5280c10 *_5 1 times scalar_load costs 12 in body
+0x5280c10 _4 + _6 1 times scalar_stmt costs 4 in body
+0x5280c10 *_8 1 times scalar_load costs 12 in body
+0x5280c10 _7 + _9 1 times scalar_stmt costs 4 in body
+0x5280c10 _11 1 times scalar_store costs 12 in body
+0x5280c10 _11 > 0 1 times scalar_stmt costs 4 in body
+0x5280c10 .MASK_LOAD (_12, 32B, _61) 1 times scalar_load costs 12 in body
+0x5280c10 _11 + _13 1 times scalar_stmt costs 4 in body
+0x5280c10 .MASK_STORE (_12, 32B, _61, _14) 1 times scalar_store costs 12 in body
+0x5280c10 *_8 1 times scalar_load costs 12 in body
+0x5280c10 *_5 1 times scalar_load costs 12 in body
+0x5280c10 _15 + _16 1 times scalar_stmt costs 4 in body
+0x5280c10 *_10 1 times scalar_load costs 12 in body
+0x5280c10 _11 <= 0 ? _17 : _ifc__62 1 times scalar_stmt costs 4 in body
+0x5280c10 _ifc__64 1 times scalar_store costs 12 in body
 tsvc.c:73:5: note:   === vect_analyze_slp ===
 tsvc.c:73:5: note:   === vect_make_slp_decision ===
 tsvc.c:73:5: note:  vectorization_factor = 8, niters = 65536
@@ -10749,24 +10749,24 @@ tsvc.c:73:5: note:   ==> examining statement: ivtmp_53 = ivtmp_54 - 1;
 tsvc.c:73:5: note:   irrelevant.
 tsvc.c:73:5: note:   ==> examining statement: if (ivtmp_53 != 0)
 tsvc.c:73:5: note:   irrelevant.
-0x4456c80 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x4456c80 *_5 1 times unaligned_load (misalign -1) costs 20 in body
-0x4456c80 _4 + _6 1 times vector_stmt costs 4 in body
-0x4456c80 *_8 1 times unaligned_load (misalign -1) costs 20 in body
-0x4456c80 _7 + _9 1 times vector_stmt costs 4 in body
-0x4456c80 _11 1 times unaligned_store (misalign -1) costs 20 in body
-0x4456c80 _11 > 0 1 times scalar_to_vec costs 4 in prologue
-0x4456c80 _11 > 0 1 times vector_stmt costs 4 in body
-0x4456c80 .MASK_LOAD (_12, 32B, _61) 1 times unaligned_load (misalign -1) costs 20 in body
-0x4456c80 _11 + _13 1 times vector_stmt costs 4 in body
-0x4456c80 .MASK_STORE (_12, 32B, _61, _14) 1 times unaligned_store (misalign -1) costs 20 in body
-0x4456c80 *_8 1 times unaligned_load (misalign -1) costs 20 in body
-0x4456c80 *_5 1 times unaligned_load (misalign -1) costs 20 in body
-0x4456c80 _15 + _16 1 times vector_stmt costs 4 in body
-0x4456c80 *_10 1 times unaligned_load (misalign -1) costs 20 in body
-0x4456c80 _11 <= 0 ? _17 : _ifc__62 1 times scalar_to_vec costs 4 in prologue
-0x4456c80 _11 <= 0 ? _17 : _ifc__62 1 times vector_stmt costs 4 in body
-0x4456c80 _ifc__64 1 times unaligned_store (misalign -1) costs 20 in body
+0x51eb380 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x51eb380 *_5 1 times unaligned_load (misalign -1) costs 20 in body
+0x51eb380 _4 + _6 1 times vector_stmt costs 4 in body
+0x51eb380 *_8 1 times unaligned_load (misalign -1) costs 20 in body
+0x51eb380 _7 + _9 1 times vector_stmt costs 4 in body
+0x51eb380 _11 1 times unaligned_store (misalign -1) costs 20 in body
+0x51eb380 _11 > 0 1 times scalar_to_vec costs 4 in prologue
+0x51eb380 _11 > 0 1 times vector_stmt costs 4 in body
+0x51eb380 .MASK_LOAD (_12, 32B, _61) 1 times unaligned_load (misalign -1) costs 20 in body
+0x51eb380 _11 + _13 1 times vector_stmt costs 4 in body
+0x51eb380 .MASK_STORE (_12, 32B, _61, _14) 1 times unaligned_store (misalign -1) costs 20 in body
+0x51eb380 *_8 1 times unaligned_load (misalign -1) costs 20 in body
+0x51eb380 *_5 1 times unaligned_load (misalign -1) costs 20 in body
+0x51eb380 _15 + _16 1 times vector_stmt costs 4 in body
+0x51eb380 *_10 1 times unaligned_load (misalign -1) costs 20 in body
+0x51eb380 _11 <= 0 ? _17 : _ifc__62 1 times scalar_to_vec costs 4 in prologue
+0x51eb380 _11 <= 0 ? _17 : _ifc__62 1 times vector_stmt costs 4 in body
+0x51eb380 _ifc__64 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65535, + , 4294967295] != 0
   bounds on difference of bases: -65535 ... -65535
@@ -10804,9 +10804,9 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_30 = i_3
 Statement i_30 = i_39 + 1;
  is executed at most 65535 (bounded by 65535) + 1 times in loop 1.
 tsvc.c:73:5: note:  not using a fully-masked loop.
-0x4456c80 <unknown> 7 times vector_stmt costs 28 in prologue
+0x51eb380 <unknown> 7 times vector_stmt costs 28 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x4456c80 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x51eb380 <unknown> 1 times cond_branch_taken costs 16 in prologue
 tsvc.c:73:5: note:  Cost model analysis: 
   Vector inside of loop cost: 224
   Vector prologue cost: 52
@@ -11053,7 +11053,7 @@ Removing basic block 15
 
 
 fix_loop_structure: fixing up loops for function
-s274 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s274 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(8) int * vectp_a.436;
   vector(8) int * vectp_a.435;
@@ -11359,62 +11359,62 @@ tsvc.c:92:13: note:  === analyze_loop_nest ===
 tsvc.c:92:13: note:   === vect_analyze_loop_form ===
 tsvc.c:92:13: note:    === get_loop_niters ===
 Analyzing # of iterations of loop 2
-  exit condition [510, + , 4294967295] != 0
-  bounds on difference of bases: -510 ... -510
+  exit condition [254, + , 4294967295] != 0
+  bounds on difference of bases: -254 ... -254
   result:
-    # of iterations 510, bounded by 510
+    # of iterations 254, bounded by 254
 Creating dr for (*_5)[i_33]
 analyze_innermost: success.
 	base_address: ff_20(D)
 	offset from base address: (ssizetype) ((sizetype) i_33 * 4)
 	constant offset from base address: 0
-	step: 2048
+	step: 1024
 	base alignment: 4
 	base misalignment: 0
 	offset alignment: 4
 	step alignment: 256
 	base_object: (*ff_20(D))
 	Access function 0: i_33
-	Access function 1: {0B, +, 2048}_2
+	Access function 1: {0B, +, 1024}_2
 Creating dr for (*_7)[i_33]
 analyze_innermost: success.
 	base_address: gg_21(D)
 	offset from base address: (ssizetype) ((sizetype) i_33 * 4)
-	constant offset from base address: 2048
-	step: 2048
+	constant offset from base address: 1024
+	step: 1024
 	base alignment: 4
 	base misalignment: 0
 	offset alignment: 4
 	step alignment: 256
 	base_object: (*gg_21(D))
 	Access function 0: i_33
-	Access function 1: {2048B, +, 2048}_2
+	Access function 1: {1024B, +, 1024}_2
 Creating dr for (*_10)[i_33]
 analyze_innermost: success.
 	base_address: hh_22(D)
 	offset from base address: (ssizetype) ((sizetype) i_33 * 4)
-	constant offset from base address: 2048
-	step: 2048
+	constant offset from base address: 1024
+	step: 1024
 	base alignment: 4
 	base misalignment: 0
 	offset alignment: 4
 	step alignment: 256
 	base_object: (*hh_22(D))
 	Access function 0: i_33
-	Access function 1: {2048B, +, 2048}_2
+	Access function 1: {1024B, +, 1024}_2
 Creating dr for (*_12)[i_33]
 analyze_innermost: success.
 	base_address: ff_20(D)
 	offset from base address: (ssizetype) ((sizetype) i_33 * 4)
-	constant offset from base address: 2048
-	step: 2048
+	constant offset from base address: 1024
+	step: 1024
 	base alignment: 4
 	base misalignment: 0
 	offset alignment: 4
 	step alignment: 256
 	base_object: (*ff_20(D))
 	Access function 0: i_33
-	Access function 1: {2048B, +, 2048}_2
+	Access function 1: {1024B, +, 1024}_2
 tsvc.c:92:13: note:   === vect_analyze_data_refs ===
 tsvc.c:92:13: note:   got vectype for stmt: _6 = (*_5)[i_33];
 vector(8) int
@@ -11430,48 +11430,48 @@ tsvc.c:92:13: note:   Access function of PHI: {1, +, 1}_2
 tsvc.c:92:13: note:   step: 1,  init: 1
 tsvc.c:92:13: note:   Detected induction.
 tsvc.c:92:13: note:   Analyze phi: .MEM_35 = PHI <.MEM_36(7), .MEM_23(9)>
-tsvc.c:92:13: note:   Analyze phi: ivtmp_17 = PHI <511(7), ivtmp_54(9)>
-tsvc.c:92:13: note:   Access function of PHI: {511, +, 4294967295}_2
-tsvc.c:92:13: note:   step: 4294967295,  init: 511
+tsvc.c:92:13: note:   Analyze phi: ivtmp_17 = PHI <255(7), ivtmp_54(9)>
+tsvc.c:92:13: note:   Access function of PHI: {255, +, 4294967295}_2
+tsvc.c:92:13: note:   step: 4294967295,  init: 255
 tsvc.c:92:13: note:   Detected induction.
 tsvc.c:92:13: note:   === vect_determine_precisions ===
 tsvc.c:92:13: note:   ivtmp_54 has no range info
-tsvc.c:92:13: note:   j_24 has range [0x2, 0x200]
-tsvc.c:92:13: note:   can narrow to unsigned:10 without loss of precision: j_24 = j_34 + 1;
+tsvc.c:92:13: note:   j_24 has range [0x2, 0x100]
+tsvc.c:92:13: note:   can narrow to unsigned:9 without loss of precision: j_24 = j_34 + 1;
 tsvc.c:92:13: note:   _13 has no range info
 tsvc.c:92:13: note:   _11 has no range info
 tsvc.c:92:13: note:   _9 has no range info
 tsvc.c:92:13: note:   _8 has no range info
 tsvc.c:92:13: note:   _6 has no range info
-tsvc.c:92:13: note:   _4 has range [0x0, 0xff000]
-tsvc.c:92:13: note:   can narrow to unsigned:20 without loss of precision: _4 = _3 + 18446744073709549568;
-tsvc.c:92:13: note:   _3 has range [0x800, 0xff800]
-tsvc.c:92:13: note:   can narrow to unsigned:20 without loss of precision: _3 = _2 * 2048;
-tsvc.c:92:13: note:   _2 has range [0x1, 0x1ff]
+tsvc.c:92:13: note:   _4 has range [0x0, 0x3f800]
+tsvc.c:92:13: note:   can narrow to unsigned:18 without loss of precision: _4 = _3 + 18446744073709550592;
+tsvc.c:92:13: note:   _3 has range [0x400, 0x3fc00]
+tsvc.c:92:13: note:   can narrow to unsigned:18 without loss of precision: _3 = _2 * 1024;
+tsvc.c:92:13: note:   _2 has range [0x1, 0xff]
 tsvc.c:92:13: note:   === vect_pattern_recog ===
 tsvc.c:92:13: note:   vect_is_simple_use: operand (long unsigned int) j_34, type of def: internal
 tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 = PHI <1(7), j_24(9)>, type of def: induction
 tsvc.c:92:13: note:   vect_is_simple_use: operand (long unsigned int) j_34, type of def: internal
 tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 = PHI <1(7), j_24(9)>, type of def: induction
-tsvc.c:92:13: note:   vect_recog_widen_mult_pattern: detected: _3 = _2 * 2048;
+tsvc.c:92:13: note:   vect_recog_widen_mult_pattern: detected: _3 = _2 * 1024;
 tsvc.c:92:13: note:   widen_mult pattern recognized: patt_43 = (long unsigned int) patt_44;
-tsvc.c:92:13: note:   extra pattern stmt: patt_44 = j_34 w* 2048;
-tsvc.c:92:13: note:   vect_is_simple_use: operand _2 * 2048, type of def: internal
-tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 w* 2048, type of def: internal
+tsvc.c:92:13: note:   extra pattern stmt: patt_44 = j_34 w* 1024;
+tsvc.c:92:13: note:   vect_is_simple_use: operand _2 * 1024, type of def: internal
+tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 w* 1024, type of def: internal
 tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 = PHI <1(7), j_24(9)>, type of def: induction
 tsvc.c:92:13: note:   === vect_analyze_data_ref_accesses ===
-tsvc.c:92:13: note:   Detected single element interleaving (*_5)[i_33] step 2048
+tsvc.c:92:13: note:   Detected single element interleaving (*_5)[i_33] step 1024
 tsvc.c:92:13: missed:   not consecutive access (*_12)[i_33] = _13;
 tsvc.c:92:13: note:   using strided accesses
-tsvc.c:92:13: note:   Detected single element interleaving (*_7)[i_33] step 2048
-tsvc.c:92:13: note:   Detected single element interleaving (*_10)[i_33] step 2048
+tsvc.c:92:13: note:   Detected single element interleaving (*_7)[i_33] step 1024
+tsvc.c:92:13: note:   Detected single element interleaving (*_10)[i_33] step 1024
 tsvc.c:92:13: note:   === vect_mark_stmts_to_be_vectorized ===
 tsvc.c:92:13: note:   init: phi relevant? j_34 = PHI <1(7), j_24(9)>
 tsvc.c:92:13: note:   init: phi relevant? .MEM_35 = PHI <.MEM_36(7), .MEM_23(9)>
-tsvc.c:92:13: note:   init: phi relevant? ivtmp_17 = PHI <511(7), ivtmp_54(9)>
+tsvc.c:92:13: note:   init: phi relevant? ivtmp_17 = PHI <255(7), ivtmp_54(9)>
 tsvc.c:92:13: note:   init: stmt relevant? _2 = (long unsigned int) j_34;
-tsvc.c:92:13: note:   init: stmt relevant? _3 = _2 * 2048;
-tsvc.c:92:13: note:   init: stmt relevant? _4 = _3 + 18446744073709549568;
+tsvc.c:92:13: note:   init: stmt relevant? _3 = _2 * 1024;
+tsvc.c:92:13: note:   init: stmt relevant? _4 = _3 + 18446744073709550592;
 tsvc.c:92:13: note:   init: stmt relevant? _5 = ff_20(D) + _4;
 tsvc.c:92:13: note:   init: stmt relevant? _6 = (*_5)[i_33];
 tsvc.c:92:13: note:   init: stmt relevant? _7 = gg_21(D) + _3;
@@ -11521,8 +11521,8 @@ tsvc.c:92:13: note:   === vect_analyze_data_ref_dependences ===
   (overlap_iterations_a = [0])
   (overlap_iterations_b = [0]))
 (analyze_overlapping_iterations 
-  (chrec_a = {0B, +, 2048}_2)
-  (chrec_b = {2048B, +, 2048}_2)
+  (chrec_a = {0B, +, 1024}_2)
+  (chrec_b = {1024B, +, 1024}_2)
 (analyze_siv_subscript 
 (analyze_subscript_affine_affine 
   (overlaps_a = [1 + 1 * x_1])
@@ -11556,8 +11556,8 @@ tsvc.c:92:13: note:   === vect_analyze_data_ref_dependences ===
   (overlap_iterations_a = [0])
   (overlap_iterations_b = [0]))
 (analyze_overlapping_iterations 
-  (chrec_a = {0B, +, 2048}_2)
-  (chrec_b = {0B, +, 2048}_2)
+  (chrec_a = {0B, +, 1024}_2)
+  (chrec_b = {0B, +, 1024}_2)
   (overlap_iterations_a = [0])
   (overlap_iterations_b = [0]))
 )
@@ -11570,8 +11570,8 @@ tsvc.c:92:13: note:   === vect_analyze_data_ref_dependences ===
   (overlap_iterations_a = [0])
   (overlap_iterations_b = [0]))
 (analyze_overlapping_iterations 
-  (chrec_a = {2048B, +, 2048}_2)
-  (chrec_b = {2048B, +, 2048}_2)
+  (chrec_a = {1024B, +, 1024}_2)
+  (chrec_b = {1024B, +, 1024}_2)
   (overlap_iterations_a = [0])
   (overlap_iterations_b = [0]))
 )
@@ -11584,8 +11584,8 @@ tsvc.c:92:13: note:   === vect_analyze_data_ref_dependences ===
   (overlap_iterations_a = [0])
   (overlap_iterations_b = [0]))
 (analyze_overlapping_iterations 
-  (chrec_a = {2048B, +, 2048}_2)
-  (chrec_b = {2048B, +, 2048}_2)
+  (chrec_a = {1024B, +, 1024}_2)
+  (chrec_b = {1024B, +, 1024}_2)
   (overlap_iterations_a = [0])
   (overlap_iterations_b = [0]))
 )
@@ -11598,8 +11598,8 @@ tsvc.c:92:13: note:   === vect_analyze_data_ref_dependences ===
   (overlap_iterations_a = [0])
   (overlap_iterations_b = [0]))
 (analyze_overlapping_iterations 
-  (chrec_a = {2048B, +, 2048}_2)
-  (chrec_b = {2048B, +, 2048}_2)
+  (chrec_a = {1024B, +, 1024}_2)
+  (chrec_b = {1024B, +, 1024}_2)
   (overlap_iterations_a = [0])
   (overlap_iterations_b = [0]))
 )
@@ -11612,10 +11612,10 @@ tsvc.c:92:13: note:  ***** Re-trying analysis with vector mode V16QI
 tsvc.c:92:13: note:   === vect_analyze_loop_form ===
 tsvc.c:92:13: note:    === get_loop_niters ===
 Analyzing # of iterations of loop 2
-  exit condition [510, + , 4294967295] != 0
-  bounds on difference of bases: -510 ... -510
+  exit condition [254, + , 4294967295] != 0
+  bounds on difference of bases: -254 ... -254
   result:
-    # of iterations 510, bounded by 510
+    # of iterations 254, bounded by 254
 tsvc.c:92:13: note:   === vect_analyze_data_refs ===
 tsvc.c:92:13: note:   got vectype for stmt: _6 = (*_5)[i_33];
 vector(4) int
@@ -11631,48 +11631,48 @@ tsvc.c:92:13: note:   Access function of PHI: {1, +, 1}_2
 tsvc.c:92:13: note:   step: 1,  init: 1
 tsvc.c:92:13: note:   Detected induction.
 tsvc.c:92:13: note:   Analyze phi: .MEM_35 = PHI <.MEM_36(7), .MEM_23(9)>
-tsvc.c:92:13: note:   Analyze phi: ivtmp_17 = PHI <511(7), ivtmp_54(9)>
-tsvc.c:92:13: note:   Access function of PHI: {511, +, 4294967295}_2
-tsvc.c:92:13: note:   step: 4294967295,  init: 511
+tsvc.c:92:13: note:   Analyze phi: ivtmp_17 = PHI <255(7), ivtmp_54(9)>
+tsvc.c:92:13: note:   Access function of PHI: {255, +, 4294967295}_2
+tsvc.c:92:13: note:   step: 4294967295,  init: 255
 tsvc.c:92:13: note:   Detected induction.
 tsvc.c:92:13: note:   === vect_determine_precisions ===
 tsvc.c:92:13: note:   ivtmp_54 has no range info
-tsvc.c:92:13: note:   j_24 has range [0x2, 0x200]
-tsvc.c:92:13: note:   can narrow to unsigned:10 without loss of precision: j_24 = j_34 + 1;
+tsvc.c:92:13: note:   j_24 has range [0x2, 0x100]
+tsvc.c:92:13: note:   can narrow to unsigned:9 without loss of precision: j_24 = j_34 + 1;
 tsvc.c:92:13: note:   _13 has no range info
 tsvc.c:92:13: note:   _11 has no range info
 tsvc.c:92:13: note:   _9 has no range info
 tsvc.c:92:13: note:   _8 has no range info
 tsvc.c:92:13: note:   _6 has no range info
-tsvc.c:92:13: note:   _4 has range [0x0, 0xff000]
-tsvc.c:92:13: note:   can narrow to unsigned:20 without loss of precision: _4 = _3 + 18446744073709549568;
-tsvc.c:92:13: note:   _3 has range [0x800, 0xff800]
-tsvc.c:92:13: note:   can narrow to unsigned:20 without loss of precision: _3 = _2 * 2048;
-tsvc.c:92:13: note:   _2 has range [0x1, 0x1ff]
+tsvc.c:92:13: note:   _4 has range [0x0, 0x3f800]
+tsvc.c:92:13: note:   can narrow to unsigned:18 without loss of precision: _4 = _3 + 18446744073709550592;
+tsvc.c:92:13: note:   _3 has range [0x400, 0x3fc00]
+tsvc.c:92:13: note:   can narrow to unsigned:18 without loss of precision: _3 = _2 * 1024;
+tsvc.c:92:13: note:   _2 has range [0x1, 0xff]
 tsvc.c:92:13: note:   === vect_pattern_recog ===
 tsvc.c:92:13: note:   vect_is_simple_use: operand (long unsigned int) j_34, type of def: internal
 tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 = PHI <1(7), j_24(9)>, type of def: induction
 tsvc.c:92:13: note:   vect_is_simple_use: operand (long unsigned int) j_34, type of def: internal
 tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 = PHI <1(7), j_24(9)>, type of def: induction
-tsvc.c:92:13: note:   vect_recog_widen_mult_pattern: detected: _3 = _2 * 2048;
+tsvc.c:92:13: note:   vect_recog_widen_mult_pattern: detected: _3 = _2 * 1024;
 tsvc.c:92:13: note:   widen_mult pattern recognized: patt_40 = (long unsigned int) patt_42;
-tsvc.c:92:13: note:   extra pattern stmt: patt_42 = j_34 w* 2048;
-tsvc.c:92:13: note:   vect_is_simple_use: operand _2 * 2048, type of def: internal
-tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 w* 2048, type of def: internal
+tsvc.c:92:13: note:   extra pattern stmt: patt_42 = j_34 w* 1024;
+tsvc.c:92:13: note:   vect_is_simple_use: operand _2 * 1024, type of def: internal
+tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 w* 1024, type of def: internal
 tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 = PHI <1(7), j_24(9)>, type of def: induction
 tsvc.c:92:13: note:   === vect_analyze_data_ref_accesses ===
-tsvc.c:92:13: note:   Detected single element interleaving (*_5)[i_33] step 2048
+tsvc.c:92:13: note:   Detected single element interleaving (*_5)[i_33] step 1024
 tsvc.c:92:13: missed:   not consecutive access (*_12)[i_33] = _13;
 tsvc.c:92:13: note:   using strided accesses
-tsvc.c:92:13: note:   Detected single element interleaving (*_7)[i_33] step 2048
-tsvc.c:92:13: note:   Detected single element interleaving (*_10)[i_33] step 2048
+tsvc.c:92:13: note:   Detected single element interleaving (*_7)[i_33] step 1024
+tsvc.c:92:13: note:   Detected single element interleaving (*_10)[i_33] step 1024
 tsvc.c:92:13: note:   === vect_mark_stmts_to_be_vectorized ===
 tsvc.c:92:13: note:   init: phi relevant? j_34 = PHI <1(7), j_24(9)>
 tsvc.c:92:13: note:   init: phi relevant? .MEM_35 = PHI <.MEM_36(7), .MEM_23(9)>
-tsvc.c:92:13: note:   init: phi relevant? ivtmp_17 = PHI <511(7), ivtmp_54(9)>
+tsvc.c:92:13: note:   init: phi relevant? ivtmp_17 = PHI <255(7), ivtmp_54(9)>
 tsvc.c:92:13: note:   init: stmt relevant? _2 = (long unsigned int) j_34;
-tsvc.c:92:13: note:   init: stmt relevant? _3 = _2 * 2048;
-tsvc.c:92:13: note:   init: stmt relevant? _4 = _3 + 18446744073709549568;
+tsvc.c:92:13: note:   init: stmt relevant? _3 = _2 * 1024;
+tsvc.c:92:13: note:   init: stmt relevant? _4 = _3 + 18446744073709550592;
 tsvc.c:92:13: note:   init: stmt relevant? _5 = ff_20(D) + _4;
 tsvc.c:92:13: note:   init: stmt relevant? _6 = (*_5)[i_33];
 tsvc.c:92:13: note:   init: stmt relevant? _7 = gg_21(D) + _3;
@@ -11713,10 +11713,10 @@ tsvc.c:92:13: note:  ***** Re-trying analysis with vector mode V8QI
 tsvc.c:92:13: note:   === vect_analyze_loop_form ===
 tsvc.c:92:13: note:    === get_loop_niters ===
 Analyzing # of iterations of loop 2
-  exit condition [510, + , 4294967295] != 0
-  bounds on difference of bases: -510 ... -510
+  exit condition [254, + , 4294967295] != 0
+  bounds on difference of bases: -254 ... -254
   result:
-    # of iterations 510, bounded by 510
+    # of iterations 254, bounded by 254
 tsvc.c:92:13: note:   === vect_analyze_data_refs ===
 tsvc.c:92:13: note:   got vectype for stmt: _6 = (*_5)[i_33];
 vector(2) int
@@ -11732,45 +11732,45 @@ tsvc.c:92:13: note:   Access function of PHI: {1, +, 1}_2
 tsvc.c:92:13: note:   step: 1,  init: 1
 tsvc.c:92:13: note:   Detected induction.
 tsvc.c:92:13: note:   Analyze phi: .MEM_35 = PHI <.MEM_36(7), .MEM_23(9)>
-tsvc.c:92:13: note:   Analyze phi: ivtmp_17 = PHI <511(7), ivtmp_54(9)>
-tsvc.c:92:13: note:   Access function of PHI: {511, +, 4294967295}_2
-tsvc.c:92:13: note:   step: 4294967295,  init: 511
+tsvc.c:92:13: note:   Analyze phi: ivtmp_17 = PHI <255(7), ivtmp_54(9)>
+tsvc.c:92:13: note:   Access function of PHI: {255, +, 4294967295}_2
+tsvc.c:92:13: note:   step: 4294967295,  init: 255
 tsvc.c:92:13: note:   Detected induction.
 tsvc.c:92:13: note:   === vect_determine_precisions ===
 tsvc.c:92:13: note:   ivtmp_54 has no range info
-tsvc.c:92:13: note:   j_24 has range [0x2, 0x200]
-tsvc.c:92:13: note:   can narrow to unsigned:10 without loss of precision: j_24 = j_34 + 1;
+tsvc.c:92:13: note:   j_24 has range [0x2, 0x100]
+tsvc.c:92:13: note:   can narrow to unsigned:9 without loss of precision: j_24 = j_34 + 1;
 tsvc.c:92:13: note:   _13 has no range info
 tsvc.c:92:13: note:   _11 has no range info
 tsvc.c:92:13: note:   _9 has no range info
 tsvc.c:92:13: note:   _8 has no range info
 tsvc.c:92:13: note:   _6 has no range info
-tsvc.c:92:13: note:   _4 has range [0x0, 0xff000]
-tsvc.c:92:13: note:   can narrow to unsigned:20 without loss of precision: _4 = _3 + 18446744073709549568;
-tsvc.c:92:13: note:   _3 has range [0x800, 0xff800]
-tsvc.c:92:13: note:   can narrow to unsigned:20 without loss of precision: _3 = _2 * 2048;
-tsvc.c:92:13: note:   _2 has range [0x1, 0x1ff]
+tsvc.c:92:13: note:   _4 has range [0x0, 0x3f800]
+tsvc.c:92:13: note:   can narrow to unsigned:18 without loss of precision: _4 = _3 + 18446744073709550592;
+tsvc.c:92:13: note:   _3 has range [0x400, 0x3fc00]
+tsvc.c:92:13: note:   can narrow to unsigned:18 without loss of precision: _3 = _2 * 1024;
+tsvc.c:92:13: note:   _2 has range [0x1, 0xff]
 tsvc.c:92:13: note:   === vect_pattern_recog ===
 tsvc.c:92:13: note:   vect_is_simple_use: operand (long unsigned int) j_34, type of def: internal
 tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 = PHI <1(7), j_24(9)>, type of def: induction
 tsvc.c:92:13: note:   vect_is_simple_use: operand (long unsigned int) j_34, type of def: internal
 tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 = PHI <1(7), j_24(9)>, type of def: induction
-tsvc.c:92:13: note:   vect_recog_widen_mult_pattern: detected: _3 = _2 * 2048;
-tsvc.c:92:13: note:   vect_is_simple_use: operand _2 * 2048, type of def: internal
+tsvc.c:92:13: note:   vect_recog_widen_mult_pattern: detected: _3 = _2 * 1024;
+tsvc.c:92:13: note:   vect_is_simple_use: operand _2 * 1024, type of def: internal
 tsvc.c:92:13: note:   vect_is_simple_use: operand j_34 = PHI <1(7), j_24(9)>, type of def: induction
 tsvc.c:92:13: note:   === vect_analyze_data_ref_accesses ===
-tsvc.c:92:13: note:   Detected single element interleaving (*_5)[i_33] step 2048
+tsvc.c:92:13: note:   Detected single element interleaving (*_5)[i_33] step 1024
 tsvc.c:92:13: missed:   not consecutive access (*_12)[i_33] = _13;
 tsvc.c:92:13: note:   using strided accesses
-tsvc.c:92:13: note:   Detected single element interleaving (*_7)[i_33] step 2048
-tsvc.c:92:13: note:   Detected single element interleaving (*_10)[i_33] step 2048
+tsvc.c:92:13: note:   Detected single element interleaving (*_7)[i_33] step 1024
+tsvc.c:92:13: note:   Detected single element interleaving (*_10)[i_33] step 1024
 tsvc.c:92:13: note:   === vect_mark_stmts_to_be_vectorized ===
 tsvc.c:92:13: note:   init: phi relevant? j_34 = PHI <1(7), j_24(9)>
 tsvc.c:92:13: note:   init: phi relevant? .MEM_35 = PHI <.MEM_36(7), .MEM_23(9)>
-tsvc.c:92:13: note:   init: phi relevant? ivtmp_17 = PHI <511(7), ivtmp_54(9)>
+tsvc.c:92:13: note:   init: phi relevant? ivtmp_17 = PHI <255(7), ivtmp_54(9)>
 tsvc.c:92:13: note:   init: stmt relevant? _2 = (long unsigned int) j_34;
-tsvc.c:92:13: note:   init: stmt relevant? _3 = _2 * 2048;
-tsvc.c:92:13: note:   init: stmt relevant? _4 = _3 + 18446744073709549568;
+tsvc.c:92:13: note:   init: stmt relevant? _3 = _2 * 1024;
+tsvc.c:92:13: note:   init: stmt relevant? _4 = _3 + 18446744073709550592;
 tsvc.c:92:13: note:   init: stmt relevant? _5 = ff_20(D) + _4;
 tsvc.c:92:13: note:   init: stmt relevant? _6 = (*_5)[i_33];
 tsvc.c:92:13: note:   init: stmt relevant? _7 = gg_21(D) + _3;
@@ -11809,7 +11809,7 @@ tsvc.c:92:13: missed:  bad data dependence.
 tsvc.c:92:13: note:  ***** Analysis failed with vector mode V8QI
 tsvc.c:92:13: missed: couldn't vectorize loop
 tsvc.c:86:6: note: vectorized 0 loops in function.
-s275 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s275 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int j;
   int i;
@@ -11817,14 +11817,14 @@ s275 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg,
   long unsigned int _2;
   long unsigned int _3;
   sizetype _4;
-  int[512] * _5;
+  int[256] * _5;
   int _6;
-  int[512] * _7;
+  int[256] * _7;
   int _8;
   int _9;
-  int[512] * _10;
+  int[256] * _10;
   int _11;
-  int[512] * _12;
+  int[256] * _12;
   int _13;
   unsigned int ivtmp_17;
   unsigned int ivtmp_45;
@@ -11835,7 +11835,7 @@ s275 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg,
 
   <bb 3> [local count: 30907933]:
   # i_33 = PHI <0(2), i_25(8)>
-  # ivtmp_53 = PHI <512(2), ivtmp_45(8)>
+  # ivtmp_53 = PHI <256(2), ivtmp_45(8)>
   _1 = (*ff_20(D))[i_33];
   if (_1 > 0)
     goto <bb 7>; [34.74%]
@@ -11846,10 +11846,10 @@ s275 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg,
 
   <bb 4> [local count: 1063004408]:
   # j_34 = PHI <1(7), j_24(9)>
-  # ivtmp_17 = PHI <511(7), ivtmp_54(9)>
+  # ivtmp_17 = PHI <255(7), ivtmp_54(9)>
   _2 = (long unsigned int) j_34;
-  _3 = _2 * 2048;
-  _4 = _3 + 18446744073709549568;
+  _3 = _2 * 1024;
+  _4 = _3 + 18446744073709550592;
   _5 = ff_20(D) + _4;
   _6 = (*_5)[i_33];
   _7 = gg_21(D) + _3;
@@ -11898,7 +11898,7 @@ tsvc.c:101:5: missed:   not vectorized: control flow in loop.
 tsvc.c:101:5: missed:  bad loop form.
 tsvc.c:101:5: missed: couldn't vectorize loop
 tsvc.c:99:6: note: vectorized 0 loops in function.
-s276 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s276 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   int _4;
@@ -12973,7 +12973,7 @@ Removing basic block 21
 Merging blocks 2 and 22
 fix_loop_structure: fixing up loops for function
 fix_loop_structure: removing loop 1
-s277 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s277 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   int _7;
@@ -13829,26 +13829,26 @@ tsvc.c:133:5: note:   ==> examining statement: if (ivtmp_65 != 0)
 tsvc.c:133:5: note:   skip.
 tsvc.c:133:5: note:   vectorization factor = 8
 tsvc.c:133:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x4488dc0 *_3 1 times scalar_load costs 12 in body
-0x4488dc0 *_76 1 times scalar_load costs 12 in body
-0x4488dc0 *_79 1 times scalar_load costs 12 in body
-0x4488dc0 *_81 1 times scalar_load costs 12 in body
-0x4488dc0 pretmp_77 - _16 1 times scalar_stmt costs 4 in body
-0x4488dc0 _17 + pretmp_80 1 times scalar_stmt costs 4 in body
-0x4488dc0 _4 > 0 1 times scalar_stmt costs 4 in body
-0x4488dc0 .MASK_STORE (_81, 32B, _68, _20) 1 times scalar_store costs 12 in body
-0x4488dc0 *_78 1 times scalar_load costs 12 in body
-0x4488dc0 pretmp_77 - pretmp_72 1 times scalar_stmt costs 4 in body
-0x4488dc0 _9 + pretmp_80 1 times scalar_stmt costs 4 in body
-0x4488dc0 _4 <= 0 1 times scalar_stmt costs 4 in body
-0x4488dc0 .MASK_STORE (_78, 32B, _69, _12) 1 times scalar_store costs 12 in body
-0x4488dc0 *_81 1 times scalar_load costs 12 in body
-0x4488dc0 _4 <= 0 ? _12 : pretmp_72 1 times scalar_stmt costs 4 in body
-0x4488dc0 _4 > 0 ? _20 : pretmp_74 1 times scalar_stmt costs 4 in body
-0x4488dc0 prephitmp_73 + prephitmp_75 1 times scalar_stmt costs 4 in body
-0x4488dc0 *_76 1 times scalar_load costs 12 in body
-0x4488dc0 _25 + _27 1 times scalar_stmt costs 4 in body
-0x4488dc0 _28 1 times scalar_store costs 12 in body
+0x5274350 *_3 1 times scalar_load costs 12 in body
+0x5274350 *_76 1 times scalar_load costs 12 in body
+0x5274350 *_79 1 times scalar_load costs 12 in body
+0x5274350 *_81 1 times scalar_load costs 12 in body
+0x5274350 pretmp_77 - _16 1 times scalar_stmt costs 4 in body
+0x5274350 _17 + pretmp_80 1 times scalar_stmt costs 4 in body
+0x5274350 _4 > 0 1 times scalar_stmt costs 4 in body
+0x5274350 .MASK_STORE (_81, 32B, _68, _20) 1 times scalar_store costs 12 in body
+0x5274350 *_78 1 times scalar_load costs 12 in body
+0x5274350 pretmp_77 - pretmp_72 1 times scalar_stmt costs 4 in body
+0x5274350 _9 + pretmp_80 1 times scalar_stmt costs 4 in body
+0x5274350 _4 <= 0 1 times scalar_stmt costs 4 in body
+0x5274350 .MASK_STORE (_78, 32B, _69, _12) 1 times scalar_store costs 12 in body
+0x5274350 *_81 1 times scalar_load costs 12 in body
+0x5274350 _4 <= 0 ? _12 : pretmp_72 1 times scalar_stmt costs 4 in body
+0x5274350 _4 > 0 ? _20 : pretmp_74 1 times scalar_stmt costs 4 in body
+0x5274350 prephitmp_73 + prephitmp_75 1 times scalar_stmt costs 4 in body
+0x5274350 *_76 1 times scalar_load costs 12 in body
+0x5274350 _25 + _27 1 times scalar_stmt costs 4 in body
+0x5274350 _28 1 times scalar_store costs 12 in body
 tsvc.c:133:5: note:   === vect_analyze_slp ===
 tsvc.c:133:5: note:   === vect_make_slp_decision ===
 tsvc.c:133:5: note:  vectorization_factor = 8, niters = 65536
@@ -14233,30 +14233,30 @@ tsvc.c:133:5: note:   ==> examining statement: ivtmp_65 = ivtmp_66 - 1;
 tsvc.c:133:5: note:   irrelevant.
 tsvc.c:133:5: note:   ==> examining statement: if (ivtmp_65 != 0)
 tsvc.c:133:5: note:   irrelevant.
-0x431f060 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x431f060 *_76 1 times unaligned_load (misalign -1) costs 20 in body
-0x431f060 *_79 1 times unaligned_load (misalign -1) costs 20 in body
-0x431f060 *_81 1 times unaligned_load (misalign -1) costs 20 in body
-0x431f060 pretmp_77 - _16 1 times vector_stmt costs 4 in body
-0x431f060 _17 + pretmp_80 1 times vector_stmt costs 4 in body
-0x431f060 _4 > 0 1 times scalar_to_vec costs 4 in prologue
-0x431f060 _4 > 0 1 times vector_stmt costs 4 in body
-0x431f060 .MASK_STORE (_81, 32B, _68, _20) 1 times unaligned_store (misalign -1) costs 20 in body
-0x431f060 *_78 1 times unaligned_load (misalign -1) costs 20 in body
-0x431f060 pretmp_77 - pretmp_72 1 times vector_stmt costs 4 in body
-0x431f060 _9 + pretmp_80 1 times vector_stmt costs 4 in body
-0x431f060 _4 <= 0 1 times scalar_to_vec costs 4 in prologue
-0x431f060 _4 <= 0 1 times vector_stmt costs 4 in body
-0x431f060 .MASK_STORE (_78, 32B, _69, _12) 1 times unaligned_store (misalign -1) costs 20 in body
-0x431f060 *_81 1 times unaligned_load (misalign -1) costs 20 in body
-0x431f060 _4 <= 0 ? _12 : pretmp_72 1 times scalar_to_vec costs 4 in prologue
-0x431f060 _4 <= 0 ? _12 : pretmp_72 1 times vector_stmt costs 4 in body
-0x431f060 _4 > 0 ? _20 : pretmp_74 1 times scalar_to_vec costs 4 in prologue
-0x431f060 _4 > 0 ? _20 : pretmp_74 1 times vector_stmt costs 4 in body
-0x431f060 prephitmp_73 + prephitmp_75 1 times vector_stmt costs 4 in body
-0x431f060 *_76 1 times unaligned_load (misalign -1) costs 20 in body
-0x431f060 _25 + _27 1 times vector_stmt costs 4 in body
-0x431f060 _28 1 times unaligned_store (misalign -1) costs 20 in body
+0x504e6b0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x504e6b0 *_76 1 times unaligned_load (misalign -1) costs 20 in body
+0x504e6b0 *_79 1 times unaligned_load (misalign -1) costs 20 in body
+0x504e6b0 *_81 1 times unaligned_load (misalign -1) costs 20 in body
+0x504e6b0 pretmp_77 - _16 1 times vector_stmt costs 4 in body
+0x504e6b0 _17 + pretmp_80 1 times vector_stmt costs 4 in body
+0x504e6b0 _4 > 0 1 times scalar_to_vec costs 4 in prologue
+0x504e6b0 _4 > 0 1 times vector_stmt costs 4 in body
+0x504e6b0 .MASK_STORE (_81, 32B, _68, _20) 1 times unaligned_store (misalign -1) costs 20 in body
+0x504e6b0 *_78 1 times unaligned_load (misalign -1) costs 20 in body
+0x504e6b0 pretmp_77 - pretmp_72 1 times vector_stmt costs 4 in body
+0x504e6b0 _9 + pretmp_80 1 times vector_stmt costs 4 in body
+0x504e6b0 _4 <= 0 1 times scalar_to_vec costs 4 in prologue
+0x504e6b0 _4 <= 0 1 times vector_stmt costs 4 in body
+0x504e6b0 .MASK_STORE (_78, 32B, _69, _12) 1 times unaligned_store (misalign -1) costs 20 in body
+0x504e6b0 *_81 1 times unaligned_load (misalign -1) costs 20 in body
+0x504e6b0 _4 <= 0 ? _12 : pretmp_72 1 times scalar_to_vec costs 4 in prologue
+0x504e6b0 _4 <= 0 ? _12 : pretmp_72 1 times vector_stmt costs 4 in body
+0x504e6b0 _4 > 0 ? _20 : pretmp_74 1 times scalar_to_vec costs 4 in prologue
+0x504e6b0 _4 > 0 ? _20 : pretmp_74 1 times vector_stmt costs 4 in body
+0x504e6b0 prephitmp_73 + prephitmp_75 1 times vector_stmt costs 4 in body
+0x504e6b0 *_76 1 times unaligned_load (misalign -1) costs 20 in body
+0x504e6b0 _25 + _27 1 times vector_stmt costs 4 in body
+0x504e6b0 _28 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65535, + , 4294967295] != 0
   bounds on difference of bases: -65535 ... -65535
@@ -14294,9 +14294,9 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_41 = i_4
 Statement i_41 = i_48 + 1;
  is executed at most 65535 (bounded by 65535) + 1 times in loop 1.
 tsvc.c:133:5: note:  not using a fully-masked loop.
-0x431f060 <unknown> 9 times vector_stmt costs 36 in prologue
+0x504e6b0 <unknown> 9 times vector_stmt costs 36 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x431f060 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x504e6b0 <unknown> 1 times cond_branch_taken costs 16 in prologue
 tsvc.c:133:5: note:  Cost model analysis: 
   Vector inside of loop cost: 240
   Vector prologue cost: 68
@@ -14608,7 +14608,7 @@ Removing basic block 15
 
 
 fix_loop_structure: fixing up loops for function
-s278 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s278 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(8) int * vectp_a.562;
   vector(8) int * vectp_a.561;
@@ -16593,43 +16593,43 @@ tsvc.c:149:5: note:   ==> examining statement: if (ivtmp_70 != 0)
 tsvc.c:149:5: note:   skip.
 tsvc.c:149:5: note:   vectorization factor = 8
 tsvc.c:149:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x44bcc90 *_3 1 times scalar_load costs 12 in body
-0x44bcc90 _4 > 0 1 times scalar_stmt costs 4 in body
-0x44bcc90 .MASK_LOAD (_19, 32B, _104) 1 times scalar_load costs 12 in body
-0x44bcc90 .MASK_LOAD (_86, 32B, _104) 1 times scalar_load costs 12 in body
-0x44bcc90 _20 - _22 1 times scalar_stmt costs 4 in body
-0x44bcc90 _20 + _23 1 times scalar_stmt costs 4 in body
-0x44bcc90 .MASK_STORE (_86, 32B, _104, _24) 1 times scalar_store costs 12 in body
-0x44bcc90 .MASK_LOAD (_85, 32B, _104) 1 times scalar_load costs 12 in body
-0x44bcc90 *_84 1 times scalar_load costs 12 in body
-0x44bcc90 _6 * _6 1 times scalar_stmt costs 12 in body
-0x44bcc90 _4 <= 0 1 times scalar_stmt costs 4 in body
-0x44bcc90 .MASK_LOAD (_85, 32B, _106) 1 times scalar_load costs 12 in body
-0x44bcc90 _7 - _9 1 times scalar_stmt costs 4 in body
-0x44bcc90 .MASK_STORE (_85, 32B, _106, _10) 1 times scalar_store costs 12 in body
-0x44bcc90 *_3 1 times scalar_load costs 12 in body
-0x44bcc90 _10 <= _11 1 times scalar_stmt costs 4 in body
-0x44bcc90 _67 & _106 1 times scalar_stmt costs 4 in body
-0x44bcc90 .MASK_LOAD (_86, 32B, _66) 1 times scalar_load costs 12 in body
-0x44bcc90 ~_67 1 times scalar_stmt costs 4 in body
-0x44bcc90 _53 & _106 1 times scalar_stmt costs 4 in body
-0x44bcc90 .MASK_LOAD (_86, 32B, _52) 1 times scalar_load costs 12 in body
-0x44bcc90 *_84 1 times scalar_load costs 12 in body
-0x44bcc90 .MASK_LOAD (_19, 32B, _52) 1 times scalar_load costs 12 in body
-0x44bcc90 _14 + _16 1 times scalar_stmt costs 4 in body
-0x44bcc90 _13 + _17 1 times scalar_stmt costs 4 in body
-0x44bcc90 .MASK_STORE (_86, 32B, _52, _18) 1 times scalar_store costs 12 in body
-0x44bcc90 .MASK_LOAD (_85, 32B, _52) 1 times scalar_load costs 12 in body
-0x44bcc90 _4 > 0 ? pretmp_78 : pretmp_79 1 times scalar_stmt costs 4 in body
-0x44bcc90 _52 ? pretmp_79 : _ifc__100 1 times scalar_stmt costs 4 in body
-0x44bcc90 _66 ? _10 : _ifc__101 1 times scalar_stmt costs 4 in body
-0x44bcc90 _4 > 0 ? _24 : _18 1 times scalar_stmt costs 4 in body
-0x44bcc90 _52 ? _18 : _ifc__102 1 times scalar_stmt costs 4 in body
-0x44bcc90 _66 ? pretmp_81 : _ifc__103 1 times scalar_stmt costs 4 in body
-0x44bcc90 prephitmp_80 + prephitmp_82 1 times scalar_stmt costs 4 in body
-0x44bcc90 *_84 1 times scalar_load costs 12 in body
-0x44bcc90 _29 + _31 1 times scalar_stmt costs 4 in body
-0x44bcc90 _32 1 times scalar_store costs 12 in body
+0x510bda0 *_3 1 times scalar_load costs 12 in body
+0x510bda0 _4 > 0 1 times scalar_stmt costs 4 in body
+0x510bda0 .MASK_LOAD (_19, 32B, _104) 1 times scalar_load costs 12 in body
+0x510bda0 .MASK_LOAD (_86, 32B, _104) 1 times scalar_load costs 12 in body
+0x510bda0 _20 - _22 1 times scalar_stmt costs 4 in body
+0x510bda0 _20 + _23 1 times scalar_stmt costs 4 in body
+0x510bda0 .MASK_STORE (_86, 32B, _104, _24) 1 times scalar_store costs 12 in body
+0x510bda0 .MASK_LOAD (_85, 32B, _104) 1 times scalar_load costs 12 in body
+0x510bda0 *_84 1 times scalar_load costs 12 in body
+0x510bda0 _6 * _6 1 times scalar_stmt costs 12 in body
+0x510bda0 _4 <= 0 1 times scalar_stmt costs 4 in body
+0x510bda0 .MASK_LOAD (_85, 32B, _106) 1 times scalar_load costs 12 in body
+0x510bda0 _7 - _9 1 times scalar_stmt costs 4 in body
+0x510bda0 .MASK_STORE (_85, 32B, _106, _10) 1 times scalar_store costs 12 in body
+0x510bda0 *_3 1 times scalar_load costs 12 in body
+0x510bda0 _10 <= _11 1 times scalar_stmt costs 4 in body
+0x510bda0 _67 & _106 1 times scalar_stmt costs 4 in body
+0x510bda0 .MASK_LOAD (_86, 32B, _66) 1 times scalar_load costs 12 in body
+0x510bda0 ~_67 1 times scalar_stmt costs 4 in body
+0x510bda0 _53 & _106 1 times scalar_stmt costs 4 in body
+0x510bda0 .MASK_LOAD (_86, 32B, _52) 1 times scalar_load costs 12 in body
+0x510bda0 *_84 1 times scalar_load costs 12 in body
+0x510bda0 .MASK_LOAD (_19, 32B, _52) 1 times scalar_load costs 12 in body
+0x510bda0 _14 + _16 1 times scalar_stmt costs 4 in body
+0x510bda0 _13 + _17 1 times scalar_stmt costs 4 in body
+0x510bda0 .MASK_STORE (_86, 32B, _52, _18) 1 times scalar_store costs 12 in body
+0x510bda0 .MASK_LOAD (_85, 32B, _52) 1 times scalar_load costs 12 in body
+0x510bda0 _4 > 0 ? pretmp_78 : pretmp_79 1 times scalar_stmt costs 4 in body
+0x510bda0 _52 ? pretmp_79 : _ifc__100 1 times scalar_stmt costs 4 in body
+0x510bda0 _66 ? _10 : _ifc__101 1 times scalar_stmt costs 4 in body
+0x510bda0 _4 > 0 ? _24 : _18 1 times scalar_stmt costs 4 in body
+0x510bda0 _52 ? _18 : _ifc__102 1 times scalar_stmt costs 4 in body
+0x510bda0 _66 ? pretmp_81 : _ifc__103 1 times scalar_stmt costs 4 in body
+0x510bda0 prephitmp_80 + prephitmp_82 1 times scalar_stmt costs 4 in body
+0x510bda0 *_84 1 times scalar_load costs 12 in body
+0x510bda0 _29 + _31 1 times scalar_stmt costs 4 in body
+0x510bda0 _32 1 times scalar_store costs 12 in body
 tsvc.c:149:5: note:   === vect_analyze_slp ===
 tsvc.c:149:5: note:   === vect_make_slp_decision ===
 tsvc.c:149:5: note:  vectorization_factor = 8, niters = 65536
@@ -17225,47 +17225,47 @@ tsvc.c:149:5: note:   ==> examining statement: ivtmp_70 = ivtmp_71 - 1;
 tsvc.c:149:5: note:   irrelevant.
 tsvc.c:149:5: note:   ==> examining statement: if (ivtmp_70 != 0)
 tsvc.c:149:5: note:   irrelevant.
-0x44b5c60 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 _4 > 0 1 times scalar_to_vec costs 4 in prologue
-0x44b5c60 _4 > 0 1 times vector_stmt costs 4 in body
-0x44b5c60 .MASK_LOAD (_19, 32B, _104) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 .MASK_LOAD (_86, 32B, _104) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 _20 - _22 1 times vector_stmt costs 4 in body
-0x44b5c60 _20 + _23 1 times vector_stmt costs 4 in body
-0x44b5c60 .MASK_STORE (_86, 32B, _104, _24) 1 times unaligned_store (misalign -1) costs 20 in body
-0x44b5c60 .MASK_LOAD (_85, 32B, _104) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 *_84 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 _6 * _6 1 times vector_stmt costs 16 in body
-0x44b5c60 _4 <= 0 1 times scalar_to_vec costs 4 in prologue
-0x44b5c60 _4 <= 0 1 times vector_stmt costs 4 in body
-0x44b5c60 .MASK_LOAD (_85, 32B, _106) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 _7 - _9 1 times vector_stmt costs 4 in body
-0x44b5c60 .MASK_STORE (_85, 32B, _106, _10) 1 times unaligned_store (misalign -1) costs 20 in body
-0x44b5c60 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 _10 <= _11 1 times vector_stmt costs 4 in body
-0x44b5c60 _67 & _106 1 times vector_stmt costs 4 in body
-0x44b5c60 .MASK_LOAD (_86, 32B, _66) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 ~_67 1 times vector_stmt costs 4 in body
-0x44b5c60 _53 & _106 1 times vector_stmt costs 4 in body
-0x44b5c60 .MASK_LOAD (_86, 32B, _52) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 *_84 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 .MASK_LOAD (_19, 32B, _52) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 _14 + _16 1 times vector_stmt costs 4 in body
-0x44b5c60 _13 + _17 1 times vector_stmt costs 4 in body
-0x44b5c60 .MASK_STORE (_86, 32B, _52, _18) 1 times unaligned_store (misalign -1) costs 20 in body
-0x44b5c60 .MASK_LOAD (_85, 32B, _52) 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 _4 > 0 ? pretmp_78 : pretmp_79 1 times scalar_to_vec costs 4 in prologue
-0x44b5c60 _4 > 0 ? pretmp_78 : pretmp_79 1 times vector_stmt costs 4 in body
-0x44b5c60 _52 ? pretmp_79 : _ifc__100 1 times vector_stmt costs 4 in body
-0x44b5c60 _66 ? _10 : _ifc__101 1 times vector_stmt costs 4 in body
-0x44b5c60 _4 > 0 ? _24 : _18 1 times scalar_to_vec costs 4 in prologue
-0x44b5c60 _4 > 0 ? _24 : _18 1 times vector_stmt costs 4 in body
-0x44b5c60 _52 ? _18 : _ifc__102 1 times vector_stmt costs 4 in body
-0x44b5c60 _66 ? pretmp_81 : _ifc__103 1 times vector_stmt costs 4 in body
-0x44b5c60 prephitmp_80 + prephitmp_82 1 times vector_stmt costs 4 in body
-0x44b5c60 *_84 1 times unaligned_load (misalign -1) costs 20 in body
-0x44b5c60 _29 + _31 1 times vector_stmt costs 4 in body
-0x44b5c60 _32 1 times unaligned_store (misalign -1) costs 20 in body
+0x527add0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 _4 > 0 1 times scalar_to_vec costs 4 in prologue
+0x527add0 _4 > 0 1 times vector_stmt costs 4 in body
+0x527add0 .MASK_LOAD (_19, 32B, _104) 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 .MASK_LOAD (_86, 32B, _104) 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 _20 - _22 1 times vector_stmt costs 4 in body
+0x527add0 _20 + _23 1 times vector_stmt costs 4 in body
+0x527add0 .MASK_STORE (_86, 32B, _104, _24) 1 times unaligned_store (misalign -1) costs 20 in body
+0x527add0 .MASK_LOAD (_85, 32B, _104) 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 *_84 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 _6 * _6 1 times vector_stmt costs 16 in body
+0x527add0 _4 <= 0 1 times scalar_to_vec costs 4 in prologue
+0x527add0 _4 <= 0 1 times vector_stmt costs 4 in body
+0x527add0 .MASK_LOAD (_85, 32B, _106) 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 _7 - _9 1 times vector_stmt costs 4 in body
+0x527add0 .MASK_STORE (_85, 32B, _106, _10) 1 times unaligned_store (misalign -1) costs 20 in body
+0x527add0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 _10 <= _11 1 times vector_stmt costs 4 in body
+0x527add0 _67 & _106 1 times vector_stmt costs 4 in body
+0x527add0 .MASK_LOAD (_86, 32B, _66) 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 ~_67 1 times vector_stmt costs 4 in body
+0x527add0 _53 & _106 1 times vector_stmt costs 4 in body
+0x527add0 .MASK_LOAD (_86, 32B, _52) 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 *_84 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 .MASK_LOAD (_19, 32B, _52) 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 _14 + _16 1 times vector_stmt costs 4 in body
+0x527add0 _13 + _17 1 times vector_stmt costs 4 in body
+0x527add0 .MASK_STORE (_86, 32B, _52, _18) 1 times unaligned_store (misalign -1) costs 20 in body
+0x527add0 .MASK_LOAD (_85, 32B, _52) 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 _4 > 0 ? pretmp_78 : pretmp_79 1 times scalar_to_vec costs 4 in prologue
+0x527add0 _4 > 0 ? pretmp_78 : pretmp_79 1 times vector_stmt costs 4 in body
+0x527add0 _52 ? pretmp_79 : _ifc__100 1 times vector_stmt costs 4 in body
+0x527add0 _66 ? _10 : _ifc__101 1 times vector_stmt costs 4 in body
+0x527add0 _4 > 0 ? _24 : _18 1 times scalar_to_vec costs 4 in prologue
+0x527add0 _4 > 0 ? _24 : _18 1 times vector_stmt costs 4 in body
+0x527add0 _52 ? _18 : _ifc__102 1 times vector_stmt costs 4 in body
+0x527add0 _66 ? pretmp_81 : _ifc__103 1 times vector_stmt costs 4 in body
+0x527add0 prephitmp_80 + prephitmp_82 1 times vector_stmt costs 4 in body
+0x527add0 *_84 1 times unaligned_load (misalign -1) costs 20 in body
+0x527add0 _29 + _31 1 times vector_stmt costs 4 in body
+0x527add0 _32 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65535, + , 4294967295] != 0
   bounds on difference of bases: -65535 ... -65535
@@ -17303,9 +17303,9 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_46 = i_5
 Statement i_46 = i_55 + 1;
  is executed at most 65535 (bounded by 65535) + 1 times in loop 1.
 tsvc.c:149:5: note:  not using a fully-masked loop.
-0x44b5c60 <unknown> 9 times vector_stmt costs 36 in prologue
+0x527add0 <unknown> 9 times vector_stmt costs 36 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x44b5c60 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x527add0 <unknown> 1 times cond_branch_taken costs 16 in prologue
 tsvc.c:149:5: note:  Cost model analysis: 
   Vector inside of loop cost: 432
   Vector prologue cost: 68
@@ -17866,7 +17866,7 @@ Removing basic block 19
 
 
 fix_loop_structure: fixing up loops for function
-s279 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s279 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(8) int * vectp_a.659;
   vector(8) int * vectp_a.658;
@@ -18725,17 +18725,17 @@ tsvc.c:170:5: note:   ==> examining statement: if (ivtmp_35 != 0)
 tsvc.c:170:5: note:   skip.
 tsvc.c:170:5: note:   vectorization factor = 8
 tsvc.c:170:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x449a770 *_3 1 times scalar_load costs 12 in body
-0x449a770 _4 < 0 1 times scalar_stmt costs 4 in body
-0x449a770 .MASK_LOAD (_5, 32B, _61) 1 times scalar_load costs 12 in body
-0x449a770 _4 < _6 1 times scalar_stmt costs 4 in body
-0x449a770 _33 & _61 1 times scalar_stmt costs 4 in body
-0x449a770 .MASK_LOAD (_7, 32B, _30) 1 times scalar_load costs 12 in body
-0x449a770 .MASK_LOAD (_9, 32B, _30) 1 times scalar_load costs 12 in body
-0x449a770 .MASK_LOAD (_11, 32B, _30) 1 times scalar_load costs 12 in body
-0x449a770 _10 + _12 1 times scalar_stmt costs 4 in body
-0x449a770 _8 + _13 1 times scalar_stmt costs 4 in body
-0x449a770 .MASK_STORE (_7, 32B, _30, _14) 1 times scalar_store costs 12 in body
+0x5044910 *_3 1 times scalar_load costs 12 in body
+0x5044910 _4 < 0 1 times scalar_stmt costs 4 in body
+0x5044910 .MASK_LOAD (_5, 32B, _61) 1 times scalar_load costs 12 in body
+0x5044910 _4 < _6 1 times scalar_stmt costs 4 in body
+0x5044910 _33 & _61 1 times scalar_stmt costs 4 in body
+0x5044910 .MASK_LOAD (_7, 32B, _30) 1 times scalar_load costs 12 in body
+0x5044910 .MASK_LOAD (_9, 32B, _30) 1 times scalar_load costs 12 in body
+0x5044910 .MASK_LOAD (_11, 32B, _30) 1 times scalar_load costs 12 in body
+0x5044910 _10 + _12 1 times scalar_stmt costs 4 in body
+0x5044910 _8 + _13 1 times scalar_stmt costs 4 in body
+0x5044910 .MASK_STORE (_7, 32B, _30, _14) 1 times scalar_store costs 12 in body
 tsvc.c:170:5: note:   === vect_analyze_slp ===
 tsvc.c:170:5: note:   === vect_make_slp_decision ===
 tsvc.c:170:5: note:  vectorization_factor = 8, niters = 65536
@@ -18935,18 +18935,18 @@ tsvc.c:170:5: note:   ==> examining statement: ivtmp_35 = ivtmp_36 - 1;
 tsvc.c:170:5: note:   irrelevant.
 tsvc.c:170:5: note:   ==> examining statement: if (ivtmp_35 != 0)
 tsvc.c:170:5: note:   irrelevant.
-0x430d160 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x430d160 _4 < 0 1 times scalar_to_vec costs 4 in prologue
-0x430d160 _4 < 0 1 times vector_stmt costs 4 in body
-0x430d160 .MASK_LOAD (_5, 32B, _61) 1 times unaligned_load (misalign -1) costs 20 in body
-0x430d160 _4 < _6 1 times vector_stmt costs 4 in body
-0x430d160 _33 & _61 1 times vector_stmt costs 4 in body
-0x430d160 .MASK_LOAD (_7, 32B, _30) 1 times unaligned_load (misalign -1) costs 20 in body
-0x430d160 .MASK_LOAD (_9, 32B, _30) 1 times unaligned_load (misalign -1) costs 20 in body
-0x430d160 .MASK_LOAD (_11, 32B, _30) 1 times unaligned_load (misalign -1) costs 20 in body
-0x430d160 _10 + _12 1 times vector_stmt costs 4 in body
-0x430d160 _8 + _13 1 times vector_stmt costs 4 in body
-0x430d160 .MASK_STORE (_7, 32B, _30, _14) 1 times unaligned_store (misalign -1) costs 20 in body
+0x5043d40 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x5043d40 _4 < 0 1 times scalar_to_vec costs 4 in prologue
+0x5043d40 _4 < 0 1 times vector_stmt costs 4 in body
+0x5043d40 .MASK_LOAD (_5, 32B, _61) 1 times unaligned_load (misalign -1) costs 20 in body
+0x5043d40 _4 < _6 1 times vector_stmt costs 4 in body
+0x5043d40 _33 & _61 1 times vector_stmt costs 4 in body
+0x5043d40 .MASK_LOAD (_7, 32B, _30) 1 times unaligned_load (misalign -1) costs 20 in body
+0x5043d40 .MASK_LOAD (_9, 32B, _30) 1 times unaligned_load (misalign -1) costs 20 in body
+0x5043d40 .MASK_LOAD (_11, 32B, _30) 1 times unaligned_load (misalign -1) costs 20 in body
+0x5043d40 _10 + _12 1 times vector_stmt costs 4 in body
+0x5043d40 _8 + _13 1 times vector_stmt costs 4 in body
+0x5043d40 .MASK_STORE (_7, 32B, _30, _14) 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65535, + , 4294967295] != 0
   bounds on difference of bases: -65535 ... -65535
@@ -18984,9 +18984,9 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_25 = i_3
 Statement i_25 = i_31 + 1;
  is executed at most 65535 (bounded by 65535) + 1 times in loop 1.
 tsvc.c:170:5: note:  not using a fully-masked loop.
-0x430d160 <unknown> 4 times vector_stmt costs 16 in prologue
+0x5043d40 <unknown> 4 times vector_stmt costs 16 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x430d160 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x5043d40 <unknown> 1 times cond_branch_taken costs 16 in prologue
 tsvc.c:170:5: note:  Cost model analysis: 
   Vector inside of loop cost: 140
   Vector prologue cost: 36
@@ -19182,7 +19182,7 @@ Removing basic block 22
 
 
 fix_loop_structure: fixing up loops for function
-s1279 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s1279 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(8) int * vectp_c.711;
   vector(8) int * vectp_c.710;
@@ -20879,38 +20879,38 @@ tsvc.c:183:5: note:   ==> examining statement: if (ivtmp_59 != 0)
 tsvc.c:183:5: note:   skip.
 tsvc.c:183:5: note:   vectorization factor = 8
 tsvc.c:183:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x44bb870 *_3 1 times scalar_load costs 12 in body
-0x44bb870 *_5 1 times scalar_load costs 12 in body
-0x44bb870 _4 > _6 1 times scalar_stmt costs 4 in body
-0x44bb870 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
-0x44bb870 _6 + _8 1 times scalar_stmt costs 4 in body
-0x44bb870 _4 + _9 1 times scalar_stmt costs 4 in body
-0x44bb870 .MASK_STORE (_3, 32B, _98, _10) 1 times scalar_store costs 12 in body
-0x44bb870 .MASK_LOAD (_64, 32B, _98) 1 times scalar_load costs 12 in body
-0x44bb870 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
-0x44bb870 _13 * 2 1 times scalar_stmt costs 12 in body
-0x44bb870 _12 + _14 1 times scalar_stmt costs 4 in body
-0x44bb870 .MASK_STORE (_64, 32B, _98, _15) 1 times scalar_store costs 12 in body
-0x44bb870 _4 <= _6 1 times scalar_stmt costs 4 in body
-0x44bb870 .MASK_LOAD (_28, 32B, _100) 1 times scalar_load costs 12 in body
-0x44bb870 _4 + _29 1 times scalar_stmt costs 4 in body
-0x44bb870 _29 + _30 1 times scalar_stmt costs 4 in body
-0x44bb870 .MASK_STORE (_5, 32B, _100, _31) 1 times scalar_store costs 12 in body
-0x44bb870 .MASK_LOAD (_101, 32B, _100) 1 times scalar_load costs 12 in body
-0x44bb870 _32 > 0 1 times scalar_stmt costs 4 in body
-0x44bb870 _51 & _100 1 times scalar_stmt costs 4 in body
-0x44bb870 *_3 1 times scalar_load costs 12 in body
-0x44bb870 .MASK_LOAD (_7, 32B, _50) 1 times scalar_load costs 12 in body
-0x44bb870 _33 + _35 1 times scalar_stmt costs 4 in body
-0x44bb870 _35 + _36 1 times scalar_stmt costs 4 in body
-0x44bb870 .MASK_STORE (_64, 32B, _50, _38) 1 times scalar_store costs 12 in body
-0x44bb870 ~_51 1 times scalar_stmt costs 4 in body
-0x44bb870 _16 & _100 1 times scalar_stmt costs 4 in body
-0x44bb870 .MASK_LOAD (_64, 32B, _57) 1 times scalar_load costs 12 in body
-0x44bb870 .MASK_LOAD (_28, 32B, _57) 1 times scalar_load costs 12 in body
-0x44bb870 _41 * 2 1 times scalar_stmt costs 12 in body
-0x44bb870 _40 + _42 1 times scalar_stmt costs 4 in body
-0x44bb870 .MASK_STORE (_64, 32B, _57, _43) 1 times scalar_store costs 12 in body
+0x510c260 *_3 1 times scalar_load costs 12 in body
+0x510c260 *_5 1 times scalar_load costs 12 in body
+0x510c260 _4 > _6 1 times scalar_stmt costs 4 in body
+0x510c260 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
+0x510c260 _6 + _8 1 times scalar_stmt costs 4 in body
+0x510c260 _4 + _9 1 times scalar_stmt costs 4 in body
+0x510c260 .MASK_STORE (_3, 32B, _98, _10) 1 times scalar_store costs 12 in body
+0x510c260 .MASK_LOAD (_64, 32B, _98) 1 times scalar_load costs 12 in body
+0x510c260 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
+0x510c260 _13 * 2 1 times scalar_stmt costs 12 in body
+0x510c260 _12 + _14 1 times scalar_stmt costs 4 in body
+0x510c260 .MASK_STORE (_64, 32B, _98, _15) 1 times scalar_store costs 12 in body
+0x510c260 _4 <= _6 1 times scalar_stmt costs 4 in body
+0x510c260 .MASK_LOAD (_28, 32B, _100) 1 times scalar_load costs 12 in body
+0x510c260 _4 + _29 1 times scalar_stmt costs 4 in body
+0x510c260 _29 + _30 1 times scalar_stmt costs 4 in body
+0x510c260 .MASK_STORE (_5, 32B, _100, _31) 1 times scalar_store costs 12 in body
+0x510c260 .MASK_LOAD (_101, 32B, _100) 1 times scalar_load costs 12 in body
+0x510c260 _32 > 0 1 times scalar_stmt costs 4 in body
+0x510c260 _51 & _100 1 times scalar_stmt costs 4 in body
+0x510c260 *_3 1 times scalar_load costs 12 in body
+0x510c260 .MASK_LOAD (_7, 32B, _50) 1 times scalar_load costs 12 in body
+0x510c260 _33 + _35 1 times scalar_stmt costs 4 in body
+0x510c260 _35 + _36 1 times scalar_stmt costs 4 in body
+0x510c260 .MASK_STORE (_64, 32B, _50, _38) 1 times scalar_store costs 12 in body
+0x510c260 ~_51 1 times scalar_stmt costs 4 in body
+0x510c260 _16 & _100 1 times scalar_stmt costs 4 in body
+0x510c260 .MASK_LOAD (_64, 32B, _57) 1 times scalar_load costs 12 in body
+0x510c260 .MASK_LOAD (_28, 32B, _57) 1 times scalar_load costs 12 in body
+0x510c260 _41 * 2 1 times scalar_stmt costs 12 in body
+0x510c260 _40 + _42 1 times scalar_stmt costs 4 in body
+0x510c260 .MASK_STORE (_64, 32B, _57, _43) 1 times scalar_store costs 12 in body
 tsvc.c:183:5: note:   === vect_analyze_slp ===
 tsvc.c:183:5: note:   === vect_make_slp_decision ===
 tsvc.c:183:5: note:  vectorization_factor = 8, niters = 65536
@@ -21548,38 +21548,38 @@ tsvc.c:183:5: note:   ==> examining statement: if (ivtmp_59 != 0)
 tsvc.c:183:5: note:   skip.
 tsvc.c:183:5: note:   vectorization factor = 4
 tsvc.c:183:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x44bda90 *_3 1 times scalar_load costs 12 in body
-0x44bda90 *_5 1 times scalar_load costs 12 in body
-0x44bda90 _4 > _6 1 times scalar_stmt costs 4 in body
-0x44bda90 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
-0x44bda90 _6 + _8 1 times scalar_stmt costs 4 in body
-0x44bda90 _4 + _9 1 times scalar_stmt costs 4 in body
-0x44bda90 .MASK_STORE (_3, 32B, _98, _10) 1 times scalar_store costs 12 in body
-0x44bda90 .MASK_LOAD (_64, 32B, _98) 1 times scalar_load costs 12 in body
-0x44bda90 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
-0x44bda90 _13 * 2 1 times scalar_stmt costs 12 in body
-0x44bda90 _12 + _14 1 times scalar_stmt costs 4 in body
-0x44bda90 .MASK_STORE (_64, 32B, _98, _15) 1 times scalar_store costs 12 in body
-0x44bda90 _4 <= _6 1 times scalar_stmt costs 4 in body
-0x44bda90 .MASK_LOAD (_28, 32B, _100) 1 times scalar_load costs 12 in body
-0x44bda90 _4 + _29 1 times scalar_stmt costs 4 in body
-0x44bda90 _29 + _30 1 times scalar_stmt costs 4 in body
-0x44bda90 .MASK_STORE (_5, 32B, _100, _31) 1 times scalar_store costs 12 in body
-0x44bda90 .MASK_LOAD (_101, 32B, _100) 1 times scalar_load costs 12 in body
-0x44bda90 _32 > 0 1 times scalar_stmt costs 4 in body
-0x44bda90 _51 & _100 1 times scalar_stmt costs 4 in body
-0x44bda90 *_3 1 times scalar_load costs 12 in body
-0x44bda90 .MASK_LOAD (_7, 32B, _50) 1 times scalar_load costs 12 in body
-0x44bda90 _33 + _35 1 times scalar_stmt costs 4 in body
-0x44bda90 _35 + _36 1 times scalar_stmt costs 4 in body
-0x44bda90 .MASK_STORE (_64, 32B, _50, _38) 1 times scalar_store costs 12 in body
-0x44bda90 ~_51 1 times scalar_stmt costs 4 in body
-0x44bda90 _16 & _100 1 times scalar_stmt costs 4 in body
-0x44bda90 .MASK_LOAD (_64, 32B, _57) 1 times scalar_load costs 12 in body
-0x44bda90 .MASK_LOAD (_28, 32B, _57) 1 times scalar_load costs 12 in body
-0x44bda90 _41 * 2 1 times scalar_stmt costs 12 in body
-0x44bda90 _40 + _42 1 times scalar_stmt costs 4 in body
-0x44bda90 .MASK_STORE (_64, 32B, _57, _43) 1 times scalar_store costs 12 in body
+0x527add0 *_3 1 times scalar_load costs 12 in body
+0x527add0 *_5 1 times scalar_load costs 12 in body
+0x527add0 _4 > _6 1 times scalar_stmt costs 4 in body
+0x527add0 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
+0x527add0 _6 + _8 1 times scalar_stmt costs 4 in body
+0x527add0 _4 + _9 1 times scalar_stmt costs 4 in body
+0x527add0 .MASK_STORE (_3, 32B, _98, _10) 1 times scalar_store costs 12 in body
+0x527add0 .MASK_LOAD (_64, 32B, _98) 1 times scalar_load costs 12 in body
+0x527add0 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
+0x527add0 _13 * 2 1 times scalar_stmt costs 12 in body
+0x527add0 _12 + _14 1 times scalar_stmt costs 4 in body
+0x527add0 .MASK_STORE (_64, 32B, _98, _15) 1 times scalar_store costs 12 in body
+0x527add0 _4 <= _6 1 times scalar_stmt costs 4 in body
+0x527add0 .MASK_LOAD (_28, 32B, _100) 1 times scalar_load costs 12 in body
+0x527add0 _4 + _29 1 times scalar_stmt costs 4 in body
+0x527add0 _29 + _30 1 times scalar_stmt costs 4 in body
+0x527add0 .MASK_STORE (_5, 32B, _100, _31) 1 times scalar_store costs 12 in body
+0x527add0 .MASK_LOAD (_101, 32B, _100) 1 times scalar_load costs 12 in body
+0x527add0 _32 > 0 1 times scalar_stmt costs 4 in body
+0x527add0 _51 & _100 1 times scalar_stmt costs 4 in body
+0x527add0 *_3 1 times scalar_load costs 12 in body
+0x527add0 .MASK_LOAD (_7, 32B, _50) 1 times scalar_load costs 12 in body
+0x527add0 _33 + _35 1 times scalar_stmt costs 4 in body
+0x527add0 _35 + _36 1 times scalar_stmt costs 4 in body
+0x527add0 .MASK_STORE (_64, 32B, _50, _38) 1 times scalar_store costs 12 in body
+0x527add0 ~_51 1 times scalar_stmt costs 4 in body
+0x527add0 _16 & _100 1 times scalar_stmt costs 4 in body
+0x527add0 .MASK_LOAD (_64, 32B, _57) 1 times scalar_load costs 12 in body
+0x527add0 .MASK_LOAD (_28, 32B, _57) 1 times scalar_load costs 12 in body
+0x527add0 _41 * 2 1 times scalar_stmt costs 12 in body
+0x527add0 _40 + _42 1 times scalar_stmt costs 4 in body
+0x527add0 .MASK_STORE (_64, 32B, _57, _43) 1 times scalar_store costs 12 in body
 tsvc.c:183:5: note:   === vect_analyze_slp ===
 tsvc.c:183:5: note:   === vect_make_slp_decision ===
 tsvc.c:183:5: note:  vectorization_factor = 4, niters = 65536
@@ -22270,38 +22270,38 @@ tsvc.c:183:5: note:   ==> examining statement: if (ivtmp_59 != 0)
 tsvc.c:183:5: note:   skip.
 tsvc.c:183:5: note:   vectorization factor = 8
 tsvc.c:183:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x44be1b0 *_3 1 times scalar_load costs 12 in body
-0x44be1b0 *_5 1 times scalar_load costs 12 in body
-0x44be1b0 _4 > _6 1 times scalar_stmt costs 4 in body
-0x44be1b0 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
-0x44be1b0 _6 + _8 1 times scalar_stmt costs 4 in body
-0x44be1b0 _4 + _9 1 times scalar_stmt costs 4 in body
-0x44be1b0 .MASK_STORE (_3, 32B, _98, _10) 1 times scalar_store costs 12 in body
-0x44be1b0 .MASK_LOAD (_64, 32B, _98) 1 times scalar_load costs 12 in body
-0x44be1b0 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
-0x44be1b0 _13 * 2 1 times scalar_stmt costs 12 in body
-0x44be1b0 _12 + _14 1 times scalar_stmt costs 4 in body
-0x44be1b0 .MASK_STORE (_64, 32B, _98, _15) 1 times scalar_store costs 12 in body
-0x44be1b0 _4 <= _6 1 times scalar_stmt costs 4 in body
-0x44be1b0 .MASK_LOAD (_28, 32B, _100) 1 times scalar_load costs 12 in body
-0x44be1b0 _4 + _29 1 times scalar_stmt costs 4 in body
-0x44be1b0 _29 + _30 1 times scalar_stmt costs 4 in body
-0x44be1b0 .MASK_STORE (_5, 32B, _100, _31) 1 times scalar_store costs 12 in body
-0x44be1b0 .MASK_LOAD (_101, 32B, _100) 1 times scalar_load costs 12 in body
-0x44be1b0 _32 > 0 1 times scalar_stmt costs 4 in body
-0x44be1b0 _51 & _100 1 times scalar_stmt costs 4 in body
-0x44be1b0 *_3 1 times scalar_load costs 12 in body
-0x44be1b0 .MASK_LOAD (_7, 32B, _50) 1 times scalar_load costs 12 in body
-0x44be1b0 _33 + _35 1 times scalar_stmt costs 4 in body
-0x44be1b0 _35 + _36 1 times scalar_stmt costs 4 in body
-0x44be1b0 .MASK_STORE (_64, 32B, _50, _38) 1 times scalar_store costs 12 in body
-0x44be1b0 ~_51 1 times scalar_stmt costs 4 in body
-0x44be1b0 _16 & _100 1 times scalar_stmt costs 4 in body
-0x44be1b0 .MASK_LOAD (_64, 32B, _57) 1 times scalar_load costs 12 in body
-0x44be1b0 .MASK_LOAD (_28, 32B, _57) 1 times scalar_load costs 12 in body
-0x44be1b0 _41 * 2 1 times scalar_stmt costs 12 in body
-0x44be1b0 _40 + _42 1 times scalar_stmt costs 4 in body
-0x44be1b0 .MASK_STORE (_64, 32B, _57, _43) 1 times scalar_store costs 12 in body
+0x510c240 *_3 1 times scalar_load costs 12 in body
+0x510c240 *_5 1 times scalar_load costs 12 in body
+0x510c240 _4 > _6 1 times scalar_stmt costs 4 in body
+0x510c240 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
+0x510c240 _6 + _8 1 times scalar_stmt costs 4 in body
+0x510c240 _4 + _9 1 times scalar_stmt costs 4 in body
+0x510c240 .MASK_STORE (_3, 32B, _98, _10) 1 times scalar_store costs 12 in body
+0x510c240 .MASK_LOAD (_64, 32B, _98) 1 times scalar_load costs 12 in body
+0x510c240 .MASK_LOAD (_7, 32B, _98) 1 times scalar_load costs 12 in body
+0x510c240 _13 * 2 1 times scalar_stmt costs 12 in body
+0x510c240 _12 + _14 1 times scalar_stmt costs 4 in body
+0x510c240 .MASK_STORE (_64, 32B, _98, _15) 1 times scalar_store costs 12 in body
+0x510c240 _4 <= _6 1 times scalar_stmt costs 4 in body
+0x510c240 .MASK_LOAD (_28, 32B, _100) 1 times scalar_load costs 12 in body
+0x510c240 _4 + _29 1 times scalar_stmt costs 4 in body
+0x510c240 _29 + _30 1 times scalar_stmt costs 4 in body
+0x510c240 .MASK_STORE (_5, 32B, _100, _31) 1 times scalar_store costs 12 in body
+0x510c240 .MASK_LOAD (_101, 32B, _100) 1 times scalar_load costs 12 in body
+0x510c240 _32 > 0 1 times scalar_stmt costs 4 in body
+0x510c240 _51 & _100 1 times scalar_stmt costs 4 in body
+0x510c240 *_3 1 times scalar_load costs 12 in body
+0x510c240 .MASK_LOAD (_7, 32B, _50) 1 times scalar_load costs 12 in body
+0x510c240 _33 + _35 1 times scalar_stmt costs 4 in body
+0x510c240 _35 + _36 1 times scalar_stmt costs 4 in body
+0x510c240 .MASK_STORE (_64, 32B, _50, _38) 1 times scalar_store costs 12 in body
+0x510c240 ~_51 1 times scalar_stmt costs 4 in body
+0x510c240 _16 & _100 1 times scalar_stmt costs 4 in body
+0x510c240 .MASK_LOAD (_64, 32B, _57) 1 times scalar_load costs 12 in body
+0x510c240 .MASK_LOAD (_28, 32B, _57) 1 times scalar_load costs 12 in body
+0x510c240 _41 * 2 1 times scalar_stmt costs 12 in body
+0x510c240 _40 + _42 1 times scalar_stmt costs 4 in body
+0x510c240 .MASK_STORE (_64, 32B, _57, _43) 1 times scalar_store costs 12 in body
 tsvc.c:183:5: note:   === vect_analyze_slp ===
 tsvc.c:183:5: note:   === vect_make_slp_decision ===
 tsvc.c:183:5: note:  vectorization_factor = 8, niters = 65536
@@ -22442,7 +22442,7 @@ Removing basic block 19
 Merging blocks 2 and 20
 fix_loop_structure: fixing up loops for function
 fix_loop_structure: removing loop 1
-s2710 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s2710 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   int * _11;
@@ -22824,13 +22824,13 @@ tsvc.c:213:5: note:   ==> examining statement: if (ivtmp_29 != 0)
 tsvc.c:213:5: note:   skip.
 tsvc.c:213:5: note:   vectorization factor = 8
 tsvc.c:213:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x431f060 *_3 1 times scalar_load costs 12 in body
-0x431f060 _4 != 0 1 times scalar_stmt costs 4 in body
-0x431f060 .MASK_LOAD (_5, 32B, _41) 1 times scalar_load costs 12 in body
-0x431f060 .MASK_LOAD (_7, 32B, _41) 1 times scalar_load costs 12 in body
-0x431f060 _4 + _8 1 times scalar_stmt costs 4 in body
-0x431f060 _6 + _9 1 times scalar_stmt costs 4 in body
-0x431f060 .MASK_STORE (_5, 32B, _41, _10) 1 times scalar_store costs 12 in body
+0x518cb20 *_3 1 times scalar_load costs 12 in body
+0x518cb20 _4 != 0 1 times scalar_stmt costs 4 in body
+0x518cb20 .MASK_LOAD (_5, 32B, _41) 1 times scalar_load costs 12 in body
+0x518cb20 .MASK_LOAD (_7, 32B, _41) 1 times scalar_load costs 12 in body
+0x518cb20 _4 + _8 1 times scalar_stmt costs 4 in body
+0x518cb20 _6 + _9 1 times scalar_stmt costs 4 in body
+0x518cb20 .MASK_STORE (_5, 32B, _41, _10) 1 times scalar_store costs 12 in body
 tsvc.c:213:5: note:   === vect_analyze_slp ===
 tsvc.c:213:5: note:   === vect_make_slp_decision ===
 tsvc.c:213:5: note:  vectorization_factor = 8, niters = 65536
@@ -22969,14 +22969,14 @@ tsvc.c:213:5: note:   ==> examining statement: ivtmp_29 = ivtmp_30 - 1;
 tsvc.c:213:5: note:   irrelevant.
 tsvc.c:213:5: note:   ==> examining statement: if (ivtmp_29 != 0)
 tsvc.c:213:5: note:   irrelevant.
-0x445c370 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x445c370 _4 != 0 1 times scalar_to_vec costs 4 in prologue
-0x445c370 _4 != 0 1 times vector_stmt costs 4 in body
-0x445c370 .MASK_LOAD (_5, 32B, _41) 1 times unaligned_load (misalign -1) costs 20 in body
-0x445c370 .MASK_LOAD (_7, 32B, _41) 1 times unaligned_load (misalign -1) costs 20 in body
-0x445c370 _4 + _8 1 times vector_stmt costs 4 in body
-0x445c370 _6 + _9 1 times vector_stmt costs 4 in body
-0x445c370 .MASK_STORE (_5, 32B, _41, _10) 1 times unaligned_store (misalign -1) costs 20 in body
+0x51bdbc0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x51bdbc0 _4 != 0 1 times scalar_to_vec costs 4 in prologue
+0x51bdbc0 _4 != 0 1 times vector_stmt costs 4 in body
+0x51bdbc0 .MASK_LOAD (_5, 32B, _41) 1 times unaligned_load (misalign -1) costs 20 in body
+0x51bdbc0 .MASK_LOAD (_7, 32B, _41) 1 times unaligned_load (misalign -1) costs 20 in body
+0x51bdbc0 _4 + _8 1 times vector_stmt costs 4 in body
+0x51bdbc0 _6 + _9 1 times vector_stmt costs 4 in body
+0x51bdbc0 .MASK_STORE (_5, 32B, _41, _10) 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65535, + , 4294967295] != 0
   bounds on difference of bases: -65535 ... -65535
@@ -23006,9 +23006,9 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_19 = i_2
 Statement i_19 = i_25 + 1;
  is executed at most 65535 (bounded by 65535) + 1 times in loop 1.
 tsvc.c:213:5: note:  not using a fully-masked loop.
-0x445c370 <unknown> 2 times vector_stmt costs 8 in prologue
+0x51bdbc0 <unknown> 2 times vector_stmt costs 8 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x445c370 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x51bdbc0 <unknown> 1 times cond_branch_taken costs 16 in prologue
 tsvc.c:213:5: note:  Cost model analysis: 
   Vector inside of loop cost: 92
   Vector prologue cost: 28
@@ -23147,7 +23147,7 @@ Removing basic block 15
 
 
 fix_loop_structure: fixing up loops for function
-s2711 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s2711 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(8) int * vectp_a.771;
   vector(8) int * vectp_a.770;
@@ -23579,13 +23579,13 @@ tsvc.c:223:5: note:   ==> examining statement: if (ivtmp_31 != 0)
 tsvc.c:223:5: note:   skip.
 tsvc.c:223:5: note:   vectorization factor = 8
 tsvc.c:223:5: note:   === vect_compute_single_scalar_iteration_cost ===
-0x449a770 *_3 1 times scalar_load costs 12 in body
-0x449a770 *_5 1 times scalar_load costs 12 in body
-0x449a770 _4 > _6 1 times scalar_stmt costs 4 in body
-0x449a770 .MASK_LOAD (_7, 32B, _41) 1 times scalar_load costs 12 in body
-0x449a770 _6 + _8 1 times scalar_stmt costs 4 in body
-0x449a770 _4 + _9 1 times scalar_stmt costs 4 in body
-0x449a770 .MASK_STORE (_3, 32B, _41, _10) 1 times scalar_store costs 12 in body
+0x518cb20 *_3 1 times scalar_load costs 12 in body
+0x518cb20 *_5 1 times scalar_load costs 12 in body
+0x518cb20 _4 > _6 1 times scalar_stmt costs 4 in body
+0x518cb20 .MASK_LOAD (_7, 32B, _41) 1 times scalar_load costs 12 in body
+0x518cb20 _6 + _8 1 times scalar_stmt costs 4 in body
+0x518cb20 _4 + _9 1 times scalar_stmt costs 4 in body
+0x518cb20 .MASK_STORE (_3, 32B, _41, _10) 1 times scalar_store costs 12 in body
 tsvc.c:223:5: note:   === vect_analyze_slp ===
 tsvc.c:223:5: note:   === vect_make_slp_decision ===
 tsvc.c:223:5: note:  vectorization_factor = 8, niters = 65536
@@ -23733,13 +23733,13 @@ tsvc.c:223:5: note:   ==> examining statement: ivtmp_31 = ivtmp_32 - 1;
 tsvc.c:223:5: note:   irrelevant.
 tsvc.c:223:5: note:   ==> examining statement: if (ivtmp_31 != 0)
 tsvc.c:223:5: note:   irrelevant.
-0x4493df0 *_3 1 times unaligned_load (misalign -1) costs 20 in body
-0x4493df0 *_5 1 times unaligned_load (misalign -1) costs 20 in body
-0x4493df0 _4 > _6 1 times vector_stmt costs 4 in body
-0x4493df0 .MASK_LOAD (_7, 32B, _41) 1 times unaligned_load (misalign -1) costs 20 in body
-0x4493df0 _6 + _8 1 times vector_stmt costs 4 in body
-0x4493df0 _4 + _9 1 times vector_stmt costs 4 in body
-0x4493df0 .MASK_STORE (_3, 32B, _41, _10) 1 times unaligned_store (misalign -1) costs 20 in body
+0x5046880 *_3 1 times unaligned_load (misalign -1) costs 20 in body
+0x5046880 *_5 1 times unaligned_load (misalign -1) costs 20 in body
+0x5046880 _4 > _6 1 times vector_stmt costs 4 in body
+0x5046880 .MASK_LOAD (_7, 32B, _41) 1 times unaligned_load (misalign -1) costs 20 in body
+0x5046880 _6 + _8 1 times vector_stmt costs 4 in body
+0x5046880 _4 + _9 1 times vector_stmt costs 4 in body
+0x5046880 .MASK_STORE (_3, 32B, _41, _10) 1 times unaligned_store (misalign -1) costs 20 in body
 Analyzing # of iterations of loop 1
   exit condition [65535, + , 4294967295] != 0
   bounds on difference of bases: -65535 ... -65535
@@ -23769,9 +23769,9 @@ Induction variable (int) 1 + 1 * iteration does not wrap in statement i_19 = i_2
 Statement i_19 = i_26 + 1;
  is executed at most 65535 (bounded by 65535) + 1 times in loop 1.
 tsvc.c:223:5: note:  not using a fully-masked loop.
-0x4493df0 <unknown> 2 times vector_stmt costs 8 in prologue
+0x5046880 <unknown> 2 times vector_stmt costs 8 in prologue
 cost model: Adding cost of checks for loop versioning aliasing.
-0x4493df0 <unknown> 1 times cond_branch_taken costs 16 in prologue
+0x5046880 <unknown> 1 times cond_branch_taken costs 16 in prologue
 tsvc.c:223:5: note:  Cost model analysis: 
   Vector inside of loop cost: 92
   Vector prologue cost: 24
@@ -23906,7 +23906,7 @@ Removing basic block 15
 
 
 fix_loop_structure: fixing up loops for function
-s2712 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s2712 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   vector(8) int * vectp_a.809;
   vector(8) int * vectp_a.808;

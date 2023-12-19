@@ -331,7 +331,7 @@ RPO tracked 33 values available at 23 locations and 33 lattice elements
 Removing dead stmt _64 = _4 < 0;
 Merging blocks 2 and 14
 fix_loop_structure: fixing up loops for function
-s161 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s161 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -769,7 +769,7 @@ RPO tracked 29 values available at 19 locations and 29 lattice elements
 Removing dead stmt _56 = _4 < 0;
 Merging blocks 2 and 14
 fix_loop_structure: fixing up loops for function
-s1161 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s1161 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -903,7 +903,7 @@ s1161 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg
 
 ;; Function s162 (s162, funcdef_no=24, decl_uid=3547, cgraph_uid=25, symbol_order=24)
 
-s162 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s162 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -1174,7 +1174,7 @@ Removing basic block 10
 
 
 fix_loop_structure: fixing up loops for function
-s271 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s271 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -1612,7 +1612,7 @@ Removing basic block 10
 
 
 fix_loop_structure: fixing up loops for function
-s272 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s272 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -2161,7 +2161,7 @@ Removing basic block 10
 
 
 fix_loop_structure: fixing up loops for function
-s273 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s273 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -2665,7 +2665,7 @@ RPO tracked 33 values available at 22 locations and 33 lattice elements
 Removing dead stmt _ifc__63 = _17;
 Merging blocks 2 and 14
 fix_loop_structure: fixing up loops for function
-s274 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s274 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -2811,7 +2811,7 @@ s274 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg,
 
 ;; Function s275 (s275, funcdef_no=29, decl_uid=3637, cgraph_uid=30, symbol_order=29)
 
-s275 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s275 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int j;
   int i;
@@ -2819,14 +2819,14 @@ s275 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg,
   long unsigned int _2;
   long unsigned int _3;
   sizetype _4;
-  int[512] * _5;
+  int[256] * _5;
   int _6;
-  int[512] * _7;
+  int[256] * _7;
   int _8;
   int _9;
-  int[512] * _10;
+  int[256] * _10;
   int _11;
-  int[512] * _12;
+  int[256] * _12;
   int _13;
   unsigned int ivtmp_17;
   unsigned int ivtmp_45;
@@ -2837,7 +2837,7 @@ s275 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg,
 
   <bb 3> [local count: 30907933]:
   # i_33 = PHI <0(2), i_25(8)>
-  # ivtmp_53 = PHI <512(2), ivtmp_45(8)>
+  # ivtmp_53 = PHI <256(2), ivtmp_45(8)>
   _1 = (*ff_20(D))[i_33];
   if (_1 > 0)
     goto <bb 7>; [34.74%]
@@ -2848,10 +2848,10 @@ s275 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg,
 
   <bb 4> [local count: 1063004408]:
   # j_34 = PHI <1(7), j_24(9)>
-  # ivtmp_17 = PHI <511(7), ivtmp_54(9)>
+  # ivtmp_17 = PHI <255(7), ivtmp_54(9)>
   _2 = (long unsigned int) j_34;
-  _3 = _2 * 2048;
-  _4 = _3 + 18446744073709549568;
+  _3 = _2 * 1024;
+  _4 = _3 + 18446744073709550592;
   _5 = ff_20(D) + _4;
   _6 = (*_5)[i_33];
   _7 = gg_21(D) + _3;
@@ -2993,7 +2993,7 @@ analyze_innermost: success.
 ----------[5]-------------
 ----------[8]-------------
 basic block after exit bb but before latch
-s276 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s276 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   int _4;
@@ -3532,7 +3532,7 @@ goto <bb 16>; [100.00%]
 
 
 fix_loop_structure: fixing up loops for function
-s277 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s277 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -4107,7 +4107,7 @@ Removing dead stmt _67 = _4 > 0;
 Removing dead stmt _8 = *_78;
 Merging blocks 2 and 14
 fix_loop_structure: fixing up loops for function
-s278 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s278 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -4896,7 +4896,7 @@ Removing dead stmt _69 = _4 > 0;
 Removing dead stmt _105 = _4 > 0;
 Merging blocks 2 and 18
 fix_loop_structure: fixing up loops for function
-s279 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s279 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -5483,7 +5483,7 @@ goto <bb 19>; [100.00%]
 
 
 fix_loop_structure: fixing up loops for function
-s1279 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s1279 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -6214,7 +6214,7 @@ Removing dead stmt _58 = _4 > _6;
 Removing dead stmt _99 = _4 > _6;
 Merging blocks 2 and 18
 fix_loop_structure: fixing up loops for function
-s2710 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s2710 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -6647,7 +6647,7 @@ Removing basic block 10
 
 
 fix_loop_structure: fixing up loops for function
-s2711 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s2711 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
@@ -6970,7 +6970,7 @@ Removing basic block 10
 
 
 fix_loop_structure: fixing up loops for function
-s2712 (int * a, int * b, int * c, int * d, int * e, int[512] * ff, int[512] * gg, int[512] * hh)
+s2712 (int * a, int * b, int * c, int * d, int * e, int[256] * ff, int[256] * gg, int[256] * hh)
 {
   int i;
   long unsigned int _1;
