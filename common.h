@@ -5,7 +5,7 @@
 #define mytype int
 #define n 65536
 #define nn 256
-#define run_times 1
+#define run_times 10000
 
 extern void s161(mytype[], mytype[], mytype[], mytype[], mytype[], mytype[nn][nn], mytype[nn][nn], mytype[nn][nn]);
 extern void s161_verify(mytype[], mytype[], mytype[], mytype[], mytype[], mytype[nn][nn], mytype[nn][nn], mytype[nn][nn]);
