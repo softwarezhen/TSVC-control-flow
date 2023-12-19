@@ -152,7 +152,7 @@ void s279(mytype a[], mytype b[], mytype c[], mytype d[], mytype e[], mytype ff[
         {
             goto L20;
         }
-        b[i] = -b[i] + d[i] * d[i];
+        b[i] = -b[i] + d[i] + d[i];
         if (b[i] <= a[i])
         {
             goto L30;
