@@ -1,4 +1,4 @@
-# TSVC-control-flow
+# TSVC-Control-Flow
 ## Introduction
 This project aims to test the ability and correctness of compiler control flow vectorization by including 16 loops with control flow.
 ## Usage
