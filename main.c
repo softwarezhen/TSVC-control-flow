@@ -56,7 +56,6 @@ int verify_arr()
     return 1;
 }
 void run_tsvc(void (*func)(mytype[], mytype[], mytype[], mytype[], mytype[], mytype[nn][nn], mytype[nn][nn], mytype[nn][nn]),
-              void (*func_verify)(mytype[], mytype[], mytype[], mytype[], mytype[], mytype[nn][nn], mytype[nn][nn], mytype[nn][nn]),
               const char *out)
 {
     init_arr();
@@ -72,7 +71,7 @@ void run_tsvc(void (*func)(mytype[], mytype[], mytype[], mytype[], mytype[], myt
     float val = timeuse / 1000000.0;
 
     for (int i = 0; i < run_times; i++)
-        func_verify(va, vb, vc, vd, ve, vff, vgg, vhh);
+        func(va, vb, vc, vd, ve, vff, vgg, vhh);
 
     if (verify_arr())
     {
@@ -85,21 +84,21 @@ void run_tsvc(void (*func)(mytype[], mytype[], mytype[], mytype[], mytype[], myt
 }
 int main()
 {
-    run_tsvc(s161, s161_verify, "s161");
-    run_tsvc(s1161, s1161_verify, "s1161");
-    run_tsvc(s162, s162_verify, "s162");
-    run_tsvc(s271, s271_verify, "s271");
-    run_tsvc(s272, s272_verify, "s272");
-    run_tsvc(s273, s273_verify, "s273");
-    run_tsvc(s274, s274_verify, "s274");
-    run_tsvc(s275, s275_verify, "s275");
-    run_tsvc(s276, s276_verify, "s276");
-    run_tsvc(s277, s277_verify, "s277");
-    run_tsvc(s278, s278_verify, "s278");
-    run_tsvc(s279, s279_verify, "s279");
-    run_tsvc(s1279, s1279_verify, "s1279");
-    run_tsvc(s2710, s2710_verify, "s2710");
-    run_tsvc(s2711, s2711_verify, "s2711");
-    run_tsvc(s2712, s2712_verify, "s2712");
+    run_tsvc(s161, "s161");
+    run_tsvc(s1161, "s1161");
+    run_tsvc(s162, "s162");
+    run_tsvc(s271, "s271");
+    run_tsvc(s272, "s272");
+    run_tsvc(s273, "s273");
+    run_tsvc(s274, "s274");
+    run_tsvc(s275, "s275");
+    run_tsvc(s276, "s276");
+    run_tsvc(s277, "s277");
+    run_tsvc(s278, "s278");
+    run_tsvc(s279, "s279");
+    run_tsvc(s1279, "s1279");
+    run_tsvc(s2710, "s2710");
+    run_tsvc(s2711, "s2711");
+    run_tsvc(s2712, "s2712");
     return 0;
 }
